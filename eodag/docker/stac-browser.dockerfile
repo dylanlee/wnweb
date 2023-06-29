@@ -14,7 +14,7 @@ WORKDIR /stac-browser
 RUN npm install
 
 # start application
-RUN npm run build -- --catalogUrl=https://54.89.201.212/catalogs/3dep-lidar-classification
+RUN npm run build -- --catalogUrl=https://54.89.201.212
 
 # production stage, self describing
 FROM nginx:stable-alpine as production-stage
