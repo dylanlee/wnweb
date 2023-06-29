@@ -1,0 +1,44 @@
+usgs:
+  priority: 5
+  api:
+    extract: False
+    credentials:
+      username: usr
+      password: pwd
+
+aws_eos:
+  search:
+    product_location_scheme: 'file'
+  auth:
+    credentials:
+      apikey: api-key
+      aws_access_key_id: access-key-id
+      aws_secret_access_key: secret-access-key
+
+peps:
+  download:
+    outputs_prefix: /data
+
+theia:
+  download:
+    outputs_prefix:
+
+my_new_provider:
+    priority: 4
+    search:
+        type: StacSearch
+        api_endpoint: https://api.my_new_provider/search
+    products:
+        S2_MSI_L1C:
+          productType: sentinel2_l1c
+        GENERIC_PRODUCT_TYPE:
+          productType: '{productType}'
+    download:
+        type: AwsDownload
+        base_uri: https://api.my_new_provider
+        flatten_top_dirs: True
+    auth:
+        type: AwsAuth
+        credentials:
+          aws_access_key_id: access-key-id
+          aws_secret_access_key: secret-access-key

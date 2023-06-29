@@ -1,0 +1,69 @@
+{
+    "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+    "description": "The Level-1C product is composed of 100x100 km2 tiles (ortho-images in UTM/WGS84 projection). It results from using a Digital Elevation Model (DEM) to project the image in cartographic geometry. Per-pixel radiometric measurements are provided in Top Of Atmosphere (TOA) reflectances along with the parameters to transform them into radiances. Level-1C products are resampled with a constant Ground Sampling Distance (GSD) of 10, 20 and 60 meters depending on the native resolution of the different spectral bands. In Level-1C  products, pixel coordinates refer to the upper left corner of the pixel. Level-1C products will additionally include Cloud Masks and ECMWF data (total column of ozone, total column of water vapour and mean sea level pressure). ",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "id": "S2_MSI_L1C",
+    "keywords": [
+        "MSI",
+        "SENTINEL2",
+        "S2A,S2B",
+        "L1",
+        "OPTICAL"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "./catalog.json",
+            "rel": "root"
+        },
+        {
+            "href": "./country/country.json",
+            "rel": "child",
+            "title": "country"
+        }
+    ],
+    "providers": [
+        {
+            "description": "The PEPS platform, the French \"mirror site\", redistributes the products of Sentinel satellites, S1A, S1B, S2A and S2B, S3A and S3B from COPERNICUS, the European system for the Earth monitoring. ",
+            "name": "peps",
+            "roles": [
+                "host"
+            ],
+            "url": "https://peps.cnes.fr"
+        }
+    ],
+    "stac_extensions": [],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "intruments": [
+            "MSI"
+        ],
+        "platform": [
+            "SENTINEL2"
+        ],
+        "platformSerialIdentifier": [
+            "S2A,S2B"
+        ]
+    },
+    "title": "SENTINEL2 Level-1C",
+    "type": "Catalog"
+}
