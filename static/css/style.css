@@ -1,0 +1,47 @@
+.hero-bg{
+  background-image: linear-gradient(rgba(5, 111, 183, .8), rgba(0, 48, 135, .8)), url("../assets/homepage-hero-bg.jpeg");
+}
+.bg-dark {
+    background-color: #056FB7!important;
+}
+.text-dark {
+    color: #056FB7!important;
+}
+
+.brand-heading{
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.brand-heading h1{
+  font-weight: bold;
+}
+.brand-heading h2{
+  text-transform: uppercase;
+  color: #999;
+  font-size: 1rem;
+}
+
+.shape {
+    pointer-events: none;
+    position: absolute;
+}
+.shape-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.shape:not([class*=shape-blur]) {
+    overflow: hidden;
+}
+
+/* New styles for the logos */
+.brand-logo:first-child {
+  margin-right: -20px;
+}
+
+.brand-logo:last-child {
+  margin-left: -20px;
+}
