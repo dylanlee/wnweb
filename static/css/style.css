@@ -53,7 +53,7 @@
 }
 
 .navbar-brand-img {
-    width: 60%;  /* 60% of the parent container width */
+    width: 50%;  /* 60% of the parent container width */
     height: auto; /* height will be adjusted automatically to maintain the image aspect ratio */
     object-fit: contain !important;
 }
@@ -104,3 +104,6 @@
   }
 }
 
+.custom-toggler {
+    height: 60%; /* Adjust to your preference */
+}
