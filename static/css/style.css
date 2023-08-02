@@ -38,10 +38,69 @@
 }
 
 /* New styles for the logos */
+.brand-logo {
+  display: flex;
+  justify-content: center;
+}
+
+/* New styles for the logos */
 .brand-logo:first-child {
-  margin-right: -20px;
+  margin-right: -10%;
 }
 
 .brand-logo:last-child {
-  margin-left: -20px;
+  margin-left: -10%;
 }
+
+.navbar-brand-img {
+    width: 60%;  /* 60% of the parent container width */
+    height: auto; /* height will be adjusted automatically to maintain the image aspect ratio */
+    object-fit: contain !important;
+}
+
+/* CSS for smaller screens */
+@media (max-width: 768px) {
+
+  .brand-row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .brand-logo:first-child {
+    margin-right: 0;
+  }
+
+  .brand-logo:last-child {
+    margin-left: 0;
+  }
+
+  .navbar-brand-img {
+    width: auto;
+    height: auto;
+    object-fit: contain !important;
+  }
+}
+
+@media (max-height: 480px) {
+  .brand-row {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .brand-logo:first-child {
+    margin-right: -10%;
+  }
+
+  .brand-logo:last-child {
+    margin-left: -10%;
+  }
+
+  .navbar-brand-img {
+    width: 60%;
+    height: auto;
+    object-fit: contain !important;
+  }
+}
+
