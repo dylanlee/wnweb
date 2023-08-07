@@ -20,7 +20,7 @@ nginx_setup: /etc/nginx/conf.d/nginx.conf
 docker_image: ./stac-browser
 	# Check if docker image exists, if not then build it
 	if [ -z "$$(docker images -q $(IMAGE_NAME))" ]; then \
-                cd ./stac-browser && docker build -t $(IMAGE_NAME) --build-arg catalogURL=https://viirs1day.s3.amazonaws.com/catalog.json .; \
+                cd ./stac-browser && docker build -t $(IMAGE_NAME) --build-arg catalogURL=https://fim-public.s3.amazonaws.com/catalog.json .; \
         fi
 
 ./stac-browser:

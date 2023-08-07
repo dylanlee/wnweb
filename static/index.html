@@ -13,9 +13,9 @@
     <div class="container">
         <div class="row align-items-left">
             <!-- Brand -->
-            <div class="col-lg-12 col-10 d-flex align-items-center brand-row">
+            <div class="col-lg-12 col-10 d-flex align-items-left brand-row">
                 <a class="col-3 brand-logo" href="/">
-                    <img src="assets/noaa-logo.png" class="img-fluid navbar-brand-img" alt="National Oceanic and Atmospheric Administration">
+                    <img src="assets/noaa-logo.png" class="img-fluid navbar-brand-img" alt="National Oceanic and Atmospheric Administration" style="padding: .5%;">
                 </a>
                 <div class="col-6 brand-heading">
                     <h1>Water Node</h1>
@@ -29,7 +29,7 @@
             <!-- Toggler -->
             <div class="col-lg-6 col-2 d-lg-none d-flex justify-content-end align-items-center order-1 order-lg-2">
                 <button class="navbar-toggler custom-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+		        <img src="/assets/menu.svg" alt="Menu">
                 </button>
             </div>
         </div>
@@ -40,87 +40,14 @@
           <!-- Navigation -->
           <ul class="navbar-nav ms-auto">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Data Access
+            <li class="nav-item">
+		    <a class="nav-link" href="https://waternode.ciroh.org:446/">
+                Data Catalog
               </a>
-
-              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
-                <div class="list-group list-group-flush ">
-                  <a class="list-group-item" href="#">
-
-                    <!-- Icon -->
-                    <div class="icon icon-sm text-primary">
-                         </div>
-
-                    <!-- Content -->
-                    <div class="ms-4">
-
-                      <!-- Heading -->
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">
-                        Data Catalog
-                      </h6>
-
-                      <!-- Text -->
-                      <p class="fs-sm text-gray-700 mb-0">
-			<!--insert heading decsription here -->
-                      </p>
-
-                    </div>
-
-                  </a>
-                  <!-- ERDDAP link -->
-                  <a class="list-group-item" href="#">
-
-                    <!-- Icon -->
-                    <div class="icon icon-sm text-primary">
-                                 </div>
-
-                    <!-- Content -->
-                    <div class="ms-4">
-
-                      <!-- Heading -->
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">
-
-                      </h6>
-
-                      <!-- Text -->
-                      <p class="fs-sm text-gray-700 mb-0">
-
-                      </p>
-
-                    </div>
-
-                  </a>
-                  <!-- Other data access heading-->
-                  <a class="list-group-item" href="#">
-
-                    <!-- Icon -->
-                    <div class="icon icon-sm text-primary">
-                                 </div>
-
-                    <!-- Content -->
-                    <div class="ms-4">
-
-                      <!-- Heading -->
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">
-                      </h6>
-
-                      <!-- Text -->
-                      <p class="fs-sm text-gray-700 mb-0">
-                      </p>
-
-                    </div>
-
-                  </a>
-
-                </div>
-              </div>
-            </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                  Tools and Training
+                 Projects 
               </a>
               <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
                 <div class="row gx-0">
@@ -128,38 +55,15 @@
                   <div class="col-12">
                     <div class="row gx-0">
                       <div class="col-12">
-
-                          <!-- Heading -->
-                          <h6 class="dropdown-header">
-                            Training
-                          </h6>
-
                           <!-- List -->
 
                           <a class="dropdown-item" href="#">
-                            Tutorials
+                           FIM evaluator 
                           </a>
                           <a class="dropdown-item " href="#">
-                            Satellite Data Courses
+                           ChannelWatch 
                           </a>
-
-                          <!-- Heading -->
-                          <h6 class="dropdown-header">
-                            Software Tools
-                          </h6>
-
-                          <!-- List -->
-                          <a class="dropdown-item" href="#">
-			    tool 1
-                          </a>
-                          <a class="dropdown-item" href="#">
-			    tool 2
-                          </a>
-                          <a class="dropdown-item mb-2" href="#">
-			    tool 3
-                          </a>
-
-                      </div>
+                        </div>
                     </div>
                   </div>
 
@@ -169,10 +73,39 @@
 
           </li>
 
-            <!-- Code Gallery -->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                  Training
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row gx-0">
+
+                  <div class="col-12">
+                    <div class="row gx-0">
+                      <div class="col-12">
+                          <!-- List -->
+
+                          <a class="dropdown-item" href="#">
+                            Tutorials
+                          </a>
+                          <a class="dropdown-item " href="#">
+                            Satellite Data Courses
+                          </a>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div> <!-- / .row -->
+
+          </li>
+
+            <!-- Reference-->
             <li class="nav-item dropdown">
               <a class="nav-link" id="navbarDocumentation" href="#">
-                Code Gallery
+               Wiki
               </a>
 
             </li>
@@ -192,7 +125,7 @@
                   Our Program
                 </a>
                 <a class="dropdown-item" href="#">
-                  RiverWatch Team
+                  Water Node Team
                 </a>
                 <a class="dropdown-item mb-1" href="#">
                   News Archive
@@ -213,22 +146,26 @@
           <div class="col-lg-6 mx-auto">
             <p class="fs-5 mb-4 text-white">Delivering Remote Sensing Data for US Inland Waters</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <a href="https://waternode.ciroh.org:446/" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">View</a>
-	      <a href="*" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Learn</a>
-	      <a href="*" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Explore</a>
+              <a href="https://waternode.ciroh.org:446/" class="btn btn-custom btn-outline-info btn-lg px-4 me-sm-3 fw-bold">View</a>
+	      <a href="*" class="btn btn-custom btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Learn</a>
+	      <a href="*" class="btn btn-custom btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Explore</a>
             </div>
           </div>
         </div>
       </section>
       <section class="pt-5 pb-5 mb-5">
-        <div class="container fs-5">
-          <p>
-            The water node website is a collaborative effort between the <a href="https://water.noaa.gov/about/nwc">National Water Center</a>, <a href="https://ciroh.ua.edu/">CIROH</a>, and <a href="https://coastwatch.noaa.gov/cwn/index.html">CoastWatch</a>. The purpose of the website is to intake and disseminate remote sensing data relevant to hydrological modeling, prediction, and analysis. The data comes from a variety of sources from within NOAA, CIROH, as well as potentially other agencies and companies. This data will be disseminated to CIROH researchers, Water Center operations, and the general public.
-          </p>
-          <p>
-            This website also serves as an educational platform for the use of satellite imagery. We want to enable stakeholders that aren't experts in the processing and acquisition of remote sensing data to use satellite imagery in their research efforts.
-          </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 fs-5">
+                <p>
+                    The water node website is a collaborative effort between the <a href="https://water.noaa.gov/about/nwc">National Water Center</a>, <a href="https://ciroh.ua.edu/">CIROH</a>, and <a href="https://coastwatch.noaa.gov/cwn/index.html">CoastWatch</a>. The purpose of the website is to intake and disseminate remote sensing data relevant to hydrological modeling, prediction, and analysis. The data comes from a variety of sources from within NOAA, CIROH, as well as potentially other agencies and companies. This data will be disseminated to CIROH researchers, Water Center operations, and the general public.
+                </p>
+                <p>
+                    This website also serves as an educational platform for the use of satellite imagery. We want to enable stakeholders that aren't experts in the processing and acquisition of remote sensing data to use satellite imagery in their research efforts.
+                </p>
+            </div>
         </div>
+    </div>
       </section>
     </main>
     <div class="position-relative">

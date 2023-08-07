@@ -8,6 +8,31 @@
     color: #056FB7!important;
 }
 
+/*hero banner button color*/
+.btn-custom {
+    background-color: white; /* or any other color you like */
+    color: #056FB7;
+    border-color: #056FB7;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:visited {
+    background-color: white;/* a lighter shade of yellow for hover effect */
+    color: #056FB7;
+}
+/*size of navbar menu items*/
+.nav-item .nav-link {
+  font-size: 1.2rem;  /* Adjust as needed */
+  }
+
+/*hero banner button color*/
+  .brand-row {
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 .brand-heading{
   text-align: center;
   display: flex;
@@ -17,11 +42,14 @@
 }
 .brand-heading h1{
   font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0rem;
 }
 .brand-heading h2{
   text-transform: uppercase;
   color: #999;
   font-size: 1rem;
+  margin-top:0rem;
 }
 
 .shape {
@@ -53,13 +81,19 @@
 }
 
 .navbar-brand-img {
-    width: 50%;  /* 60% of the parent container width */
+    width: 35%;  /* 60% of the parent container width */
     height: auto; /* height will be adjusted automatically to maintain the image aspect ratio */
     object-fit: contain !important;
 }
 
 /* CSS for smaller screens */
 @media (max-width: 768px) {
+
+.brand-heading h1{
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+}
 
   .brand-row {
     justify-content: center;
@@ -76,34 +110,49 @@
   }
 
   .navbar-brand-img {
-    width: auto;
+    width: 55%;
     height: auto;
     object-fit: contain !important;
   }
+ 
 }
 
 @media (max-height: 480px) {
+
+.brand-heading h1{
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 0rem;
+}
+.brand-heading h2{
+  text-transform: uppercase;
+  color: #999;
+  font-size: .8rem;
+  margin-top:0rem;
+}
+
+
   .brand-row {
-    justify-content: center;
+    justify-content: left;
     display: flex;
     flex-wrap: wrap;
   }
 
   .brand-logo:first-child {
-    margin-right: -10%;
+    margin-right: -15%;
   }
 
   .brand-logo:last-child {
-    margin-left: -10%;
+    margin-left: -15%;
   }
 
   .navbar-brand-img {
-    width: 60%;
+    width: 35%;
     height: auto;
     object-fit: contain !important;
   }
 }
 
 .custom-toggler {
-    height: 60%; /* Adjust to your preference */
+    height: 75%; /* Adjust to your preference */
 }
