@@ -5,9 +5,9 @@ CONTAINER_NAME = stac-container
 
 all: nginx_setup docker_image run_container
 
-/etc/nginx/conf.d/nginx.conf: /home/dylan/wnweb/nginx.conf
+/etc/nginx/conf.d/nginx.conf: /home/wnweb/wnweb/nginx.conf
 	# Copy nginx configuration
-	sudo cp /home/dylan/wnweb/nginx.conf /etc/nginx/conf.d/
+	sudo cp /home/wnweb/wnweb/nginx.conf /etc/nginx/conf.d/
 
 nginx_setup: /etc/nginx/conf.d/nginx.conf 
 	# Start nginx
@@ -25,8 +25,8 @@ docker_image: ./stac-browser
 
 ./stac-browser:
 	#Clone EODAG git repository if it doesn't exist
-	if [ ! -d "/home/dylan/wnweb/stac-browser" ]; then \
-                git clone https://github.com/radiantearth/stac-browser.git /home/dylan/wnweb/stac-browser; \
+	if [ ! -d "/home/wnweb/wnweb/stac-browser" ]; then \
+                git clone https://github.com/radiantearth/stac-browser.git /home/wnweb/wnweb/stac-browser; \
         fi
 
 run_container: docker_image
