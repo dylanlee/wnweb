@@ -42,7 +42,7 @@
 }
 .brand-heading h1{
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0rem;
 }
 .brand-heading h2{
@@ -91,7 +91,7 @@
 
 .brand-heading h1{
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-bottom: 0rem;
 }
 
@@ -139,11 +139,11 @@
   }
 
   .brand-logo:first-child {
-    margin-right: -15%;
+    margin-right: -8%;
   }
 
   .brand-logo:last-child {
-    margin-left: -15%;
+    margin-left: -8%;
   }
 
   .navbar-brand-img {
