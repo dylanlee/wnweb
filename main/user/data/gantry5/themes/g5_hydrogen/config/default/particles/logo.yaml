@@ -1,0 +1,9 @@
+enabled: '1'
+url: ''
+target: _self
+image: 'gantry-media://media/noaa-logo.png'
+height: ''
+link: '1'
+svg: ''
+text: 'National Oceanic and Atmospheric Administration'
+class: gantry-logo

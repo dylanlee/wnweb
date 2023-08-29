@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Part of <a href="https://coastwatch.noaa.gov/cwn/index.html">NOAA CoastWatch</a>'
+css:
+  class: branding

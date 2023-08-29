@@ -8,3 +8,18 @@
  * http://docs.gantry.org/gantry5/tutorials/adding-a-custom-style-sheet
  */
 
+/*
+# Heading Styles
+*/
+.site-title h1 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 0rem;
+}
+.site-title h2 {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 0rem;
+}
+/*# sourceMappingURL=custom.css.map */

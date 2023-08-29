@@ -1,8 +1,8 @@
 <?php
 return [
     'file' => 'gantry-theme://css-compiled/custom__error.css',
-    'timestamp' => 1693299932,
-    'md5' => '0b17fa7408efd4e0f66f0a2082f13078',
+    'timestamp' => 1693345862,
+    'md5' => 'e51a5c33d4e0602e862f0fdcb0c5ed44',
     'variables' => [
         'accent-color-1' => '#3180c2',
         'accent-color-2' => '#ef6c00',
@@ -19,8 +19,8 @@ return [
         'feature-text-color' => '#666666',
         'footer-background' => '#ffffff',
         'footer-text-color' => '#666666',
-        'header-background' => '#1867a9',
-        'header-text-color' => '#ffffff',
+        'header-background' => '#ffffff',
+        'header-text-color' => '#1867a9',
         'main-background' => '#ffffff',
         'main-text-color' => '#666666',
         'menu-col-width' => '180px',
@@ -40,6 +40,6 @@ return [
         'preset' => '\'preset2\''
     ],
     'imports' => [
-        'custom.scss' => 1693297164
+        'custom.scss' => 1693345767
     ]
 ];

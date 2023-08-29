@@ -1,0 +1,31 @@
+enabled: '1'
+css:
+  class: social
+title: ''
+target: ''
+display: both
+items:
+  -
+    icon: 'fa fa-facebook-square'
+    text: ''
+    title: 'Follow us on Facebook'
+    link: '#'
+    name: Facebook
+  -
+    icon: 'fa fa-twitter-square'
+    text: ''
+    title: 'Follow us on Twitter/X'
+    link: '#'
+    name: Twitter/X
+  -
+    icon: 'fa fa-youtube'
+    text: ''
+    title: 'Subscribe to our YouTube Channel'
+    link: '#'
+    name: YouTube
+  -
+    icon: 'fa fa-linkedin-square'
+    text: ''
+    title: 'Follow us on LinkedIn'
+    link: '#'
+    name: LinkedIn

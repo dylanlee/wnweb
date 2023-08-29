@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/data/gantry5/themes/g5_hydrogen/config/default/layout.yaml',
-    'modified' => 1693299822,
+    'modified' => 1693347586,
     'data' => [
         'version' => 2,
         'preset' => [
@@ -13,8 +13,13 @@ return [
         'layout' => [
             '/header/' => [
                 0 => [
-                    0 => 'logo-8477 30',
-                    1 => 'position-header 70'
+                    0 => 'logo-8477 10',
+                    1 => 'custom-5216 30',
+                    2 => 'logo-4012 10',
+                    3 => 'spacer-spacer-1234 50'
+                ],
+                1 => [
+                    0 => 'position-header'
                 ]
             ],
             '/navigation/' => [
@@ -73,8 +78,37 @@ return [
             ]
         ],
         'content' => [
+            'logo-8477' => [
+                'title' => 'NOAA Logo',
+                'block' => [
+                    'variations' => 'center'
+                ]
+            ],
+            'custom-5216' => [
+                'title' => 'Custom HTML',
+                'attributes' => [
+                    'html' => '<h1>Water Prediction Node</h1>
+<h2>A NOAA CoastWatch Node</h2>'
+                ],
+                'block' => [
+                    'class' => 'site-title',
+                    'variations' => 'center'
+                ]
+            ],
+            'logo-4012' => [
+                'title' => 'CIROH Logo',
+                'attributes' => [
+                    'url' => 'https://ciroh.ua.edu/',
+                    'image' => 'gantry-media://media/ciroh-logo.png',
+                    'text' => 'Cooperative Institute  for Research to Operations in Hydrology'
+                ],
+                'block' => [
+                    'variations' => 'center'
+                ]
+            ],
             'position-header' => [
                 'attributes' => [
+                    'enabled' => 0,
                     'key' => 'header'
                 ]
             ],

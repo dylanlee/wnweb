@@ -1,5 +1,5 @@
 name: default
-timestamp: 1693299822
+timestamp: 1693347586
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -17,7 +17,13 @@ sections:
   offcanvas: Offcanvas
 particles:
   logo:
-    logo-8477: Logo
+    logo-8477: 'NOAA Logo'
+    logo-4012: 'CIROH Logo'
+  custom:
+    custom-5216: 'Custom HTML'
+  spacer:
+    spacer-spacer-1234: Spacer
+    spacer-5945: Spacer
   position:
     position-header: Header
     position-breadcrumbs: Breadcrumbs
@@ -30,8 +36,6 @@ particles:
     system-content-6790: 'Page Content'
   copyright:
     copyright-3134: Copyright
-  spacer:
-    spacer-5945: Spacer
   branding:
     branding-1311: Branding
   mobile-menu:

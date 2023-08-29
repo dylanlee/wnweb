@@ -2,7 +2,7 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/data/gantry5/themes/g5_hydrogen/config/default/styles.yaml',
-    'modified' => 1693299878,
+    'modified' => 1693340919,
     'data' => [
         'preset' => 'preset2',
         'base' => [
@@ -16,8 +16,8 @@ return [
             'color-2' => '#ef6c00'
         ],
         'header' => [
-            'background' => '#1867a9',
-            'text-color' => '#ffffff'
+            'background' => '#ffffff',
+            'text-color' => '#1867a9'
         ],
         'navigation' => [
             'background' => '#3180c2',

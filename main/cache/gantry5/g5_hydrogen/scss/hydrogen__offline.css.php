@@ -1,8 +1,8 @@
 <?php
 return [
     'file' => 'gantry-theme://css-compiled/hydrogen__offline.css',
-    'timestamp' => 1693299939,
-    'md5' => 'cd5bde813c50bd08c7c3a5e0a361d9c8',
+    'timestamp' => 1693345870,
+    'md5' => 'b411d388cad6be79005c42e16583621e',
     'variables' => [
         'accent-color-1' => '#3180c2',
         'accent-color-2' => '#ef6c00',
@@ -19,8 +19,8 @@ return [
         'feature-text-color' => '#666666',
         'footer-background' => '#ffffff',
         'footer-text-color' => '#666666',
-        'header-background' => '#1867a9',
-        'header-text-color' => '#ffffff',
+        'header-background' => '#ffffff',
+        'header-text-color' => '#1867a9',
         'main-background' => '#ffffff',
         'main-text-color' => '#666666',
         'menu-col-width' => '180px',

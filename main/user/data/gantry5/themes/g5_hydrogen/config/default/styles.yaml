@@ -8,8 +8,8 @@ accent:
   color-1: '#3180c2'
   color-2: '#ef6c00'
 header:
-  background: '#1867a9'
-  text-color: '#ffffff'
+  background: '#ffffff'
+  text-color: '#1867a9'
 navigation:
   background: '#3180c2'
   text-color: '#ffffff'

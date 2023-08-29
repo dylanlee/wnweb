@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/var/www/html/user/data/flex/indexes/pages.json',
-    'modified' => 1693301149,
+    'modified' => 1693339531,
     'size' => 1754,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1693301149,
+        'timestamp' => 1693339531,
         'count' => 7,
         'index' => [
             '' => [
@@ -26,13 +26,13 @@ return [
                 'key' => 'home',
                 'storage_key' => '01.home',
                 'template' => 'default',
-                'storage_timestamp' => 1693299048,
+                'storage_timestamp' => 1693338354,
                 'markdown' => [
                     '' => [
-                        'default' => 1693299048
+                        'default' => 1693338354
                     ]
                 ],
-                'checksum' => '466aba2801a7a88751735dc39767661b'
+                'checksum' => '2129bc063ccd54fb6aaf242ed3134992'
             ],
             '02.data-access' => [
                 'key' => 'data-access',
@@ -90,13 +90,13 @@ return [
                 'key' => 'about',
                 'storage_key' => '04.about',
                 'template' => 'default',
-                'storage_timestamp' => 1693299784,
+                'storage_timestamp' => 1693339530,
                 'markdown' => [
                     '' => [
-                        'default' => 1693299784
+                        'default' => 1693339530
                     ]
                 ],
-                'checksum' => '9b54db0566d404598c6701028bbb3800'
+                'checksum' => '210e4c4e0b5740e1e28092de552f1065'
             ]
         ]
     ]

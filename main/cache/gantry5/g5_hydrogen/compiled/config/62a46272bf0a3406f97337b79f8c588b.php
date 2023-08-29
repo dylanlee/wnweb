@@ -1,21 +1,97 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1693299879,
-    'checksum' => '9a3d05ac99f0351f37287d7a7d3f173d',
+    'timestamp' => 1693347650,
+    'checksum' => '30925e4728a6fd66dcff6abed93c69a8',
     'files' => [
         'user/data/gantry5/themes/g5_hydrogen/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/index.yaml',
-                'modified' => 1693299822
+                'modified' => 1693347587
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/layout.yaml',
-                'modified' => 1693299822
+                'modified' => 1693347586
+            ],
+            'particles/branding' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/branding.yaml',
+                'modified' => 1693346611
+            ],
+            'particles/breadcrumbs' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/breadcrumbs.yaml',
+                'modified' => 1693346611
+            ],
+            'particles/content' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/content.yaml',
+                'modified' => 1693346614
+            ],
+            'particles/contentarray' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/contentarray.yaml',
+                'modified' => 1693346611
+            ],
+            'particles/copyright' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/copyright.yaml',
+                'modified' => 1693346611
+            ],
+            'particles/custom' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/custom.yaml',
+                'modified' => 1693346611
+            ],
+            'particles/date' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/date.yaml',
+                'modified' => 1693346612
+            ],
+            'particles/feed' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/feed.yaml',
+                'modified' => 1693346612
+            ],
+            'particles/login' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/login.yaml',
+                'modified' => 1693346612
+            ],
+            'particles/logo' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/logo.yaml',
+                'modified' => 1693346612
+            ],
+            'particles/menu' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/menu.yaml',
+                'modified' => 1693346613
+            ],
+            'particles/messages' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/messages.yaml',
+                'modified' => 1693346614
+            ],
+            'particles/mobile-menu' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/mobile-menu.yaml',
+                'modified' => 1693346613
+            ],
+            'particles/position' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/position.yaml',
+                'modified' => 1693346614
+            ],
+            'particles/sample' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/sample.yaml',
+                'modified' => 1693346613
+            ],
+            'particles/search' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/search.yaml',
+                'modified' => 1693346613
+            ],
+            'particles/social' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/social.yaml',
+                'modified' => 1693346613
+            ],
+            'particles/spacer' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/spacer.yaml',
+                'modified' => 1693346614
+            ],
+            'particles/totop' => [
+                'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/totop.yaml',
+                'modified' => 1693346614
             ],
             'styles' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/styles.yaml',
-                'modified' => 1693299878
+                'modified' => 1693340919
             ]
         ],
         'user/themes/g5_hydrogen/config/default' => [
@@ -31,14 +107,14 @@ return [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true
+                'enabled' => '1'
             ],
             'branding' => [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true,
-                'content' => 'Powered by <a href="http://www.gantry.org/" title="Gantry Framework" class="g-powered-by">Gantry Framework</a>',
+                'enabled' => '1',
+                'content' => 'Part of <a href="https://coastwatch.noaa.gov/cwn/index.html">NOAA CoastWatch</a>',
                 'css' => [
                     'class' => 'branding'
                 ]
@@ -47,11 +123,12 @@ return [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true,
+                'enabled' => '1',
                 'date' => [
                     'start' => 'now',
                     'end' => 'now'
-                ]
+                ],
+                'owner' => ''
             ],
             'custom' => [
                 'caching' => [
@@ -61,7 +138,7 @@ return [
                         'filter' => '0'
                     ]
                 ],
-                'enabled' => true,
+                'enabled' => '1',
                 'twig' => '0',
                 'filter' => '0'
             ],
@@ -71,57 +148,93 @@ return [
                 ],
                 'enabled' => '1',
                 'target' => '_self',
-                'link' => true,
+                'link' => '1',
                 'url' => '',
-                'image' => 'gantry-assets://images/gantry5-logo.png',
-                'text' => 'Gantry 5',
-                'class' => 'gantry-logo'
+                'image' => 'gantry-media://media/noaa-logo.png',
+                'text' => 'National Oceanic and Atmospheric Administration',
+                'class' => 'gantry-logo',
+                'height' => '',
+                'svg' => ''
             ],
             'menu' => [
                 'caching' => [
                     'type' => 'menu'
                 ],
-                'enabled' => true,
-                'menu' => '',
+                'enabled' => '1',
+                'menu' => '0',
                 'base' => '/',
-                'startLevel' => 1,
-                'maxLevels' => 0,
-                'renderTitles' => 0,
-                'hoverExpand' => 1,
-                'mobileTarget' => 0,
-                'forceTarget' => 0
+                'startLevel' => '1',
+                'maxLevels' => '0',
+                'renderTitles' => '0',
+                'hoverExpand' => '1',
+                'mobileTarget' => '0',
+                'forceTarget' => '0'
             ],
             'mobile-menu' => [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true
+                'enabled' => '1'
             ],
             'social' => [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true,
+                'enabled' => '1',
                 'css' => [
                     'class' => 'social'
                 ],
                 'target' => '',
-                'display' => 'both'
+                'display' => 'both',
+                'title' => '',
+                'items' => [
+                    0 => [
+                        'icon' => 'fa fa-facebook-square',
+                        'text' => '',
+                        'title' => 'Follow us on Facebook',
+                        'link' => '#',
+                        'name' => 'Facebook'
+                    ],
+                    1 => [
+                        'icon' => 'fa fa-twitter-square',
+                        'text' => '',
+                        'title' => 'Follow us on Twitter/X',
+                        'link' => '#',
+                        'name' => 'Twitter/X'
+                    ],
+                    2 => [
+                        'icon' => 'fa fa-youtube',
+                        'text' => '',
+                        'title' => 'Subscribe to our YouTube Channel',
+                        'link' => '#',
+                        'name' => 'YouTube'
+                    ],
+                    3 => [
+                        'icon' => 'fa fa-linkedin-square',
+                        'text' => '',
+                        'title' => 'Follow us on LinkedIn',
+                        'link' => '#',
+                        'name' => 'LinkedIn'
+                    ]
+                ]
             ],
             'spacer' => [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true
+                'enabled' => '1'
             ],
             'totop' => [
                 'caching' => [
                     'type' => 'static'
                 ],
-                'enabled' => true,
+                'enabled' => '1',
                 'css' => [
                     'class' => 'totop'
-                ]
+                ],
+                'icon' => '',
+                'content' => '',
+                'title' => ''
             ],
             'analytics' => [
                 'enabled' => true,
@@ -133,13 +246,13 @@ return [
                 'enabled' => true
             ],
             'breadcrumbs' => [
-                'enabled' => true
+                'enabled' => '1'
             ],
             'content' => [
-                'enabled' => true
+                'enabled' => '1'
             ],
             'contentarray' => [
-                'enabled' => true,
+                'enabled' => '1',
                 'article' => [
                     'limit' => [
                         'total' => 2,
@@ -157,30 +270,40 @@ return [
                             'formatting' => 'text'
                         ],
                         'title' => [
-                            'enabled' => 'show'
+                            'enabled' => 'show',
+                            'limit' => ''
                         ],
                         'date' => [
                             'enabled' => 'published',
                             'format' => 'l, F d, Y'
                         ],
                         'read_more' => [
-                            'enabled' => 'show'
+                            'enabled' => 'show',
+                            'label' => '',
+                            'css' => ''
                         ],
                         'author' => [
                             'enabled' => 'show'
                         ],
                         'category' => [
-                            'enabled' => 'link'
+                            'enabled' => 'show',
+                            'route' => ''
                         ]
                     ],
                     'sort' => [
                         'orderby' => 'default',
                         'ordering' => 'asc'
                     ]
+                ],
+                'css' => [
+                    'class' => ''
+                ],
+                'extra' => [
+                    
                 ]
             ],
             'date' => [
-                'enabled' => true,
+                'enabled' => '1',
                 'css' => [
                     'class' => 'date'
                 ],
@@ -189,7 +312,7 @@ return [
                 ]
             ],
             'feed' => [
-                'enabled' => true
+                'enabled' => '1'
             ],
             'frameworks' => [
                 'enabled' => true,
@@ -222,16 +345,17 @@ return [
                 'enabled' => true
             ],
             'login' => [
-                'enabled' => true
+                'enabled' => '1'
             ],
             'messages' => [
-                'enabled' => true
+                'enabled' => '1'
             ],
             'position' => [
-                'enabled' => true
+                'enabled' => '1',
+                'chrome' => ''
             ],
             'search' => [
-                'enabled' => true
+                'enabled' => '1'
             ]
         ],
         'page' => [
@@ -279,8 +403,8 @@ return [
                 'text-color' => '#666666'
             ],
             'header' => [
-                'background' => '#1867a9',
-                'text-color' => '#ffffff'
+                'background' => '#ffffff',
+                'text-color' => '#1867a9'
             ],
             'main' => [
                 'background' => '#ffffff',
@@ -381,7 +505,7 @@ return [
         ],
         'index' => [
             'name' => 'default',
-            'timestamp' => 1693299822,
+            'timestamp' => 1693347586,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
@@ -402,7 +526,15 @@ return [
             ],
             'particles' => [
                 'logo' => [
-                    'logo-8477' => 'Logo'
+                    'logo-8477' => 'NOAA Logo',
+                    'logo-4012' => 'CIROH Logo'
+                ],
+                'custom' => [
+                    'custom-5216' => 'Custom HTML'
+                ],
+                'spacer' => [
+                    'spacer-spacer-1234' => 'Spacer',
+                    'spacer-5945' => 'Spacer'
                 ],
                 'position' => [
                     'position-header' => 'Header',
@@ -420,9 +552,6 @@ return [
                 ],
                 'copyright' => [
                     'copyright-3134' => 'Copyright'
-                ],
-                'spacer' => [
-                    'spacer-5945' => 'Spacer'
                 ],
                 'branding' => [
                     'branding-1311' => 'Branding'
@@ -445,8 +574,13 @@ return [
             'layout' => [
                 '/header/' => [
                     0 => [
-                        0 => 'logo-8477 30',
-                        1 => 'position-header 70'
+                        0 => 'logo-8477 10',
+                        1 => 'custom-5216 30',
+                        2 => 'logo-4012 10',
+                        3 => 'spacer-spacer-1234 50'
+                    ],
+                    1 => [
+                        0 => 'position-header'
                     ]
                 ],
                 '/navigation/' => [
@@ -505,8 +639,37 @@ return [
                 ]
             ],
             'content' => [
+                'logo-8477' => [
+                    'title' => 'NOAA Logo',
+                    'block' => [
+                        'variations' => 'center'
+                    ]
+                ],
+                'custom-5216' => [
+                    'title' => 'Custom HTML',
+                    'attributes' => [
+                        'html' => '<h1>Water Prediction Node</h1>
+<h2>A NOAA CoastWatch Node</h2>'
+                    ],
+                    'block' => [
+                        'class' => 'site-title',
+                        'variations' => 'center'
+                    ]
+                ],
+                'logo-4012' => [
+                    'title' => 'CIROH Logo',
+                    'attributes' => [
+                        'url' => 'https://ciroh.ua.edu/',
+                        'image' => 'gantry-media://media/ciroh-logo.png',
+                        'text' => 'Cooperative Institute  for Research to Operations in Hydrology'
+                    ],
+                    'block' => [
+                        'variations' => 'center'
+                    ]
+                ],
                 'position-header' => [
                     'attributes' => [
+                        'enabled' => 0,
                         'key' => 'header'
                     ]
                 ],

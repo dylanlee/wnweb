@@ -2,10 +2,10 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/data/gantry5/themes/g5_hydrogen/config/default/index.yaml',
-    'modified' => 1693299822,
+    'modified' => 1693347587,
     'data' => [
         'name' => 'default',
-        'timestamp' => 1693299822,
+        'timestamp' => 1693347586,
         'version' => 7,
         'preset' => [
             'image' => 'gantry-admin://images/layouts/default.png',
@@ -26,7 +26,15 @@ return [
         ],
         'particles' => [
             'logo' => [
-                'logo-8477' => 'Logo'
+                'logo-8477' => 'NOAA Logo',
+                'logo-4012' => 'CIROH Logo'
+            ],
+            'custom' => [
+                'custom-5216' => 'Custom HTML'
+            ],
+            'spacer' => [
+                'spacer-spacer-1234' => 'Spacer',
+                'spacer-5945' => 'Spacer'
             ],
             'position' => [
                 'position-header' => 'Header',
@@ -44,9 +52,6 @@ return [
             ],
             'copyright' => [
                 'copyright-3134' => 'Copyright'
-            ],
-            'spacer' => [
-                'spacer-5945' => 'Spacer'
             ],
             'branding' => [
                 'branding-1311' => 'Branding'
