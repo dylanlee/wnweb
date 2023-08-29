@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/var/www/html/user/data/flex/indexes/pages.json',
-    'modified' => 1693299784,
+    'modified' => 1693301149,
     'size' => 1754,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1693299784,
+        'timestamp' => 1693301149,
         'count' => 7,
         'index' => [
             '' => [
@@ -66,25 +66,25 @@ return [
                 'key' => 'tools-and-training/code-examples',
                 'storage_key' => '03.tools-and-training/code-examples',
                 'template' => 'default',
-                'storage_timestamp' => 1693299466,
+                'storage_timestamp' => 1693301149,
                 'markdown' => [
                     '' => [
-                        'default' => 1693299466
+                        'default' => 1693301059
                     ]
                 ],
-                'checksum' => 'bec92989510639d7e8182784e9391301'
+                'checksum' => '07580d99b95c4745401002c2249a2344'
             ],
             '03.tools-and-training/water-node-tutorials' => [
                 'key' => 'tools-and-training/water-node-tutorials',
                 'storage_key' => '03.tools-and-training/water-node-tutorials',
                 'template' => 'default',
-                'storage_timestamp' => 1693299674,
+                'storage_timestamp' => 1693300963,
                 'markdown' => [
                     '' => [
-                        'default' => 1693299674
+                        'default' => 1693300963
                     ]
                 ],
-                'checksum' => 'b9bac7299331d201f702101e4417c9f0'
+                'checksum' => '91eeef7198f199737e45801d84c1581e'
             ],
             '04.about' => [
                 'key' => 'about',

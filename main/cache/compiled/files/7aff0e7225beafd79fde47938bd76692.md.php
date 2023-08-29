@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
-    'filename' => '/var/www/html/user/pages/03.tools-and-training/code-examples/default.md',
+    'filename' => '/var/www/html/user/pages/03.tools-and-training/code-examples/blog.md',
     'modified' => 1693301059,
     'size' => 80,
     'data' => [
