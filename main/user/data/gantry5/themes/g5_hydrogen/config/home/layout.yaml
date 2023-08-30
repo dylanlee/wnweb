@@ -1,0 +1,90 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1693297350
+layout:
+  /header/:
+    -
+      - 'logo-5099 10'
+      - 'custom-5832 30'
+      - 'logo-4700 10'
+      - 'spacer-4731 50'
+  /navigation/:
+    -
+      - menu-1072
+  /showcase/:
+    -
+      - custom-2895
+  /feature/: {  }
+  /main/:
+    -
+      - system-messages-7049
+    -
+      - system-content-7411
+  /subfeature/: {  }
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-6009 50'
+      - 'branding-5276 50'
+  offcanvas:
+    -
+      - mobile-menu-5038
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  logo-5099:
+    title: 'Logo / Image'
+  custom-5832:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h1>Water Prediction Node</h1>\n<h2>A NOAA Coast Watch Node</h2>"
+    block:
+      class: site-title
+  logo-4700:
+    title: 'CIROH Logo'
+    attributes:
+      url: 'https://ciroh.ua.edu/'
+      image: 'gantry-media://media/ciroh-logo.png'
+      text: 'Cooperative Institute  for Research to Operations in Hydrology'
+  custom-2895:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h1>Water Prediction Node</h1>\n<p>Delivering Remote Sensing Data for US Inland Waters</p>\n<a href=\"\" class=\"button\">View</a>\n<a href=\"\" class=\"button\">Learn</a>\n<a href=\"\" class=\"button\">Explore</a>"
+    block:
+      variations: center
+  position-footer:
+    attributes:
+      key: footer
+  branding-5276:
+    block:
+      variations: align-right
+  mobile-menu-5038:
+    title: 'Mobile Menu'

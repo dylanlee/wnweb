@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1693347650,
-    'checksum' => '30925e4728a6fd66dcff6abed93c69a8',
+    'timestamp' => 1693407186,
+    'checksum' => '590fb89c0532e3e828c8af68591e275b',
     'files' => [
         'user/data/gantry5/themes/g5_hydrogen/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/index.yaml',
-                'modified' => 1693347587
+                'modified' => 1693405729
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/layout.yaml',
-                'modified' => 1693347586
+                'modified' => 1693405729
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/branding.yaml',
@@ -505,7 +505,7 @@ return [
         ],
         'index' => [
             'name' => 'default',
-            'timestamp' => 1693347586,
+            'timestamp' => 1693405729,
             'version' => 7,
             'preset' => [
                 'image' => 'gantry-admin://images/layouts/default.png',
@@ -533,7 +533,7 @@ return [
                     'custom-5216' => 'Custom HTML'
                 ],
                 'spacer' => [
-                    'spacer-spacer-1234' => 'Spacer',
+                    'spacer-1234' => 'Spacer',
                     'spacer-5945' => 'Spacer'
                 ],
                 'position' => [
@@ -577,7 +577,7 @@ return [
                         0 => 'logo-8477 10',
                         1 => 'custom-5216 30',
                         2 => 'logo-4012 10',
-                        3 => 'spacer-spacer-1234 50'
+                        3 => 'spacer-1234 50'
                     ],
                     1 => [
                         0 => 'position-header'

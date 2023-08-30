@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Gantry\\Component\\Config\\CompiledConfig',
-    'timestamp' => 1693345844,
-    'checksum' => 'e753e781abaa95bc4343e66bf95dd9d4',
+    'timestamp' => 1693402843,
+    'checksum' => 'b82b826661afb0007b86bf8e526dc2b5',
     'files' => [
         'user/data/gantry5/themes/g5_hydrogen/config/_error' => [
             'index' => [
@@ -17,87 +17,87 @@ return [
         'user/data/gantry5/themes/g5_hydrogen/config/default' => [
             'index' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/index.yaml',
-                'modified' => 1693342227
+                'modified' => 1693347587
             ],
             'layout' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/layout.yaml',
-                'modified' => 1693342227
+                'modified' => 1693347586
             ],
             'particles/branding' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/branding.yaml',
-                'modified' => 1693340857
+                'modified' => 1693346611
             ],
             'particles/breadcrumbs' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/breadcrumbs.yaml',
-                'modified' => 1693340858
+                'modified' => 1693346611
             ],
             'particles/content' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/content.yaml',
-                'modified' => 1693340861
+                'modified' => 1693346614
             ],
             'particles/contentarray' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/contentarray.yaml',
-                'modified' => 1693340858
+                'modified' => 1693346611
             ],
             'particles/copyright' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/copyright.yaml',
-                'modified' => 1693340858
+                'modified' => 1693346611
             ],
             'particles/custom' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/custom.yaml',
-                'modified' => 1693340858
+                'modified' => 1693346611
             ],
             'particles/date' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/date.yaml',
-                'modified' => 1693340859
+                'modified' => 1693346612
             ],
             'particles/feed' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/feed.yaml',
-                'modified' => 1693340859
+                'modified' => 1693346612
             ],
             'particles/login' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/login.yaml',
-                'modified' => 1693340859
+                'modified' => 1693346612
             ],
             'particles/logo' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/logo.yaml',
-                'modified' => 1693340859
+                'modified' => 1693346612
             ],
             'particles/menu' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/menu.yaml',
-                'modified' => 1693340859
+                'modified' => 1693346613
             ],
             'particles/messages' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/messages.yaml',
-                'modified' => 1693340861
+                'modified' => 1693346614
             ],
             'particles/mobile-menu' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/mobile-menu.yaml',
-                'modified' => 1693340860
+                'modified' => 1693346613
             ],
             'particles/position' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/position.yaml',
-                'modified' => 1693340861
+                'modified' => 1693346614
             ],
             'particles/sample' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/sample.yaml',
-                'modified' => 1693340860
+                'modified' => 1693346613
             ],
             'particles/search' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/search.yaml',
-                'modified' => 1693340860
+                'modified' => 1693346613
             ],
             'particles/social' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/social.yaml',
-                'modified' => 1693340860
+                'modified' => 1693346613
             ],
             'particles/spacer' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/spacer.yaml',
-                'modified' => 1693340861
+                'modified' => 1693346614
             ],
             'particles/totop' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/particles/totop.yaml',
-                'modified' => 1693340860
+                'modified' => 1693346614
             ],
             'styles' => [
                 'file' => 'user/data/gantry5/themes/g5_hydrogen/config/default/styles.yaml',
@@ -198,7 +198,34 @@ return [
                 'display' => 'both',
                 'title' => '',
                 'items' => [
-                    
+                    0 => [
+                        'icon' => 'fa fa-facebook-square',
+                        'text' => '',
+                        'title' => 'Follow us on Facebook',
+                        'link' => '#',
+                        'name' => 'Facebook'
+                    ],
+                    1 => [
+                        'icon' => 'fa fa-twitter-square',
+                        'text' => '',
+                        'title' => 'Follow us on Twitter/X',
+                        'link' => '#',
+                        'name' => 'Twitter/X'
+                    ],
+                    2 => [
+                        'icon' => 'fa fa-youtube',
+                        'text' => '',
+                        'title' => 'Subscribe to our YouTube Channel',
+                        'link' => '#',
+                        'name' => 'YouTube'
+                    ],
+                    3 => [
+                        'icon' => 'fa fa-linkedin-square',
+                        'text' => '',
+                        'title' => 'Follow us on LinkedIn',
+                        'link' => '#',
+                        'name' => 'LinkedIn'
+                    ]
                 ]
             ],
             'spacer' => [

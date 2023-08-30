@@ -9,7 +9,7 @@ layout:
       - 'logo-8477 10'
       - 'custom-5216 30'
       - 'logo-4012 10'
-      - 'spacer-spacer-1234 50'
+      - 'spacer-1234 50'
     -
       - position-header
   /navigation/:

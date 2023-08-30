@@ -2,10 +2,10 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/data/gantry5/themes/g5_hydrogen/config/default/index.yaml',
-    'modified' => 1693347587,
+    'modified' => 1693405729,
     'data' => [
         'name' => 'default',
-        'timestamp' => 1693347586,
+        'timestamp' => 1693405729,
         'version' => 7,
         'preset' => [
             'image' => 'gantry-admin://images/layouts/default.png',
@@ -33,7 +33,7 @@ return [
                 'custom-5216' => 'Custom HTML'
             ],
             'spacer' => [
-                'spacer-spacer-1234' => 'Spacer',
+                'spacer-1234' => 'Spacer',
                 'spacer-5945' => 'Spacer'
             ],
             'position' => [
