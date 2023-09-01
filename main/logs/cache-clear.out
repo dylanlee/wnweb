@@ -1,0 +1,8 @@
+2023-09-01T03:01:33+00:00
+>>>>>>>>>>>>>>>>>>>>>>>>>
+Cleared:  /var/www/html/cache/twig/*
+Cleared:  /var/www/html/cache/doctrine/*
+Cleared:  /var/www/html/cache/compiled/*
+Cleared:  /var/www/html/cache/gantry5/*
+
+Touched: /var/www/html/user/config/system.yaml

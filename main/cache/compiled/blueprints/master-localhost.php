@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1693297653,
-    'checksum' => '97c0fecdfbef73dcd3711fb522678bec',
+    'timestamp' => 1693576924,
+    'checksum' => '617b2041e7cbd031571b37a755b0a619',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -45,14 +45,6 @@ return [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1693292712
             ],
-            'plugins/anchors' => [
-                'file' => 'user/plugins/anchors/blueprints.yaml',
-                'modified' => 1693297478
-            ],
-            'plugins/breadcrumbs' => [
-                'file' => 'user/plugins/breadcrumbs/blueprints.yaml',
-                'modified' => 1693297482
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
                 'modified' => 1693292695
@@ -60,14 +52,6 @@ return [
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
                 'modified' => 1693292694
-            ],
-            'plugins/external_links' => [
-                'file' => 'user/plugins/external_links/blueprints.yaml',
-                'modified' => 1693297486
-            ],
-            'plugins/feed' => [
-                'file' => 'user/plugins/feed/blueprints.yaml',
-                'modified' => 1693297490
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/blueprints.yaml',
@@ -77,59 +61,27 @@ return [
                 'file' => 'user/plugins/form/blueprints.yaml',
                 'modified' => 1693292707
             ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/blueprints.yaml',
+                'modified' => 1693576686
+            ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/blueprints.yaml',
                 'modified' => 1693297161
-            ],
-            'plugins/git-sync' => [
-                'file' => 'user/plugins/git-sync/blueprints.yaml',
-                'modified' => 1693297498
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
                 'modified' => 1693292736
             ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/blueprints.yaml',
-                'modified' => 1693292711
-            ],
-            'plugins/prism-highlight' => [
-                'file' => 'user/plugins/prism-highlight/blueprints.yaml',
-                'modified' => 1693297517
-            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1693292688
-            ],
-            'plugins/shortcode-core' => [
-                'file' => 'user/plugins/shortcode-core/blueprints.yaml',
-                'modified' => 1693297539
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/blueprints.yaml',
-                'modified' => 1693297530
-            ],
-            'plugins/themer' => [
-                'file' => 'user/plugins/themer/blueprints.yaml',
-                'modified' => 1693296991
             ]
         ],
         'user/themes' => [
             'themes/g5_hydrogen' => [
                 'file' => 'user/themes/g5_hydrogen/blueprints.yaml',
                 'modified' => 1693297349
-            ],
-            'themes/learn2' => [
-                'file' => 'user/themes/learn2/blueprints.yaml',
-                'modified' => 1693297557
-            ],
-            'themes/learn2-git-sync' => [
-                'file' => 'user/themes/learn2-git-sync/blueprints.yaml',
-                'modified' => 1693297605
-            ],
-            'themes/quark' => [
-                'file' => 'user/themes/quark/blueprints.yaml',
-                'modified' => 1693292685
             ]
         ]
     ],
@@ -3876,231 +3828,6 @@ return [
                 'name' => 'plugins.admin.pagemedia.resize_quality',
                 'validation' => 'loose'
             ],
-            'plugins.anchors' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.anchors.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.anchors.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.active' => [
-                'type' => 'toggle',
-                'label' => 'Active',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.anchors.active',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.selectors' => [
-                'type' => 'text',
-                'label' => 'Selectors',
-                'size' => 'large',
-                'default' => 'h1,h2,h3,h4',
-                'name' => 'plugins.anchors.selectors',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.placement' => [
-                'type' => 'select',
-                'label' => 'Placement',
-                'classes' => 'fancy',
-                'default' => 'right',
-                'options' => [
-                    'left' => 'left',
-                    'right' => 'right'
-                ],
-                'name' => 'plugins.anchors.placement',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.visible' => [
-                'type' => 'select',
-                'label' => 'Visible',
-                'classes' => 'fancy',
-                'default' => 'hover',
-                'options' => [
-                    'hover' => 'hover',
-                    'always' => 'always'
-                ],
-                'name' => 'plugins.anchors.visible',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.icon' => [
-                'type' => 'text',
-                'label' => 'Icon',
-                'size' => 'medium',
-                'default' => '',
-                'name' => 'plugins.anchors.icon',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.class' => [
-                'type' => 'text',
-                'label' => 'Class',
-                'size' => 'medium',
-                'default' => '',
-                'name' => 'plugins.anchors.class',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.truncate' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'label' => 'Truncate',
-                'default' => 64,
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 0
-                ],
-                'name' => 'plugins.anchors.truncate',
-                'validation' => 'strict'
-            ],
-            'plugins.anchors.copy_to_clipboard' => [
-                'type' => 'toggle',
-                'label' => 'Copy to clipboard',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.anchors.copy_to_clipboard',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.breadcrumbs.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.breadcrumbs.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.show_all' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_BREADCRUMBS.SHOW_WITH_ONE_ITEM',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.breadcrumbs.show_all',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_BREADCRUMBS.BUILTIN_CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.breadcrumbs.built_in_css',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.include_home' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_BREADCRUMBS.INCLUDE_HOME',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.breadcrumbs.include_home',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.include_current' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_BREADCRUMBS.INCLUDE_CURRENT_PAGE',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.breadcrumbs.include_current',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.icon_home' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'PLUGIN_BREADCRUMBS.ICON_HOME',
-                'default' => '',
-                'name' => 'plugins.breadcrumbs.icon_home',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.icon_divider_classes' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'PLUGIN_BREADCRUMBS.ICON_DIVIDER_CLASSES',
-                'default' => 'fa fa-angle-right',
-                'name' => 'plugins.breadcrumbs.icon_divider_classes',
-                'validation' => 'strict'
-            ],
-            'plugins.breadcrumbs.link_trailing' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_BREADCRUMBS.LINK_TRAILING',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.breadcrumbs.link_trailing',
-                'validation' => 'strict'
-            ],
             'plugins.email' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -4310,289 +4037,6 @@ return [
                 'label' => 'PLUGIN_ERROR.ROUTE_404',
                 'default' => '/error',
                 'name' => 'plugins.error.routes.404',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.external_links.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.BUILTIN_CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.built_in_css',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.weight' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.WEIGHT',
-                'default' => 0,
-                'validate' => [
-                    'type' => 'int',
-                    'min' => -100,
-                    'max' => 100
-                ],
-                'name' => 'plugins.external_links.weight',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.links' => [
-                'type' => '_parent',
-                'name' => 'plugins.external_links.links',
-                'form_field' => false
-            ],
-            'plugins.external_links.links.www' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.LINKS.WWW',
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.links.www',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.links.redirects' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.LINKS.REDIRECTS',
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.links.redirects',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.links.schemes' => [
-                'type' => 'selectize',
-                'size' => 'large',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.LINKS.SCHEMES',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.external_links.links.schemes',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.exclude' => [
-                'type' => '_parent',
-                'name' => 'plugins.external_links.exclude',
-                'form_field' => false
-            ],
-            'plugins.external_links.exclude.classes' => [
-                'type' => 'selectize',
-                'size' => 'large',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.EXCLUDE.CLASSES',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.external_links.exclude.classes',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.exclude.domains' => [
-                'type' => 'selectize',
-                'size' => 'large',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.EXCLUDE.DOMAINS',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.external_links.exclude.domains',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.process' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.PROCESS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.process',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.title' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.TITLE',
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.title',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.no_follow' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.NO_FOLLOW',
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.external_links.no_follow',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.target' => [
-                'type' => 'select',
-                'size' => 'large',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.TARGET',
-                'default' => '_blank',
-                'selectize' => [
-                    'create' => true
-                ],
-                'options' => [
-                    '_blank' => 'PLUGINS.EXTERNAL_LINKS.TARGET_BLANK',
-                    '_self' => 'PLUGINS.EXTERNAL_LINKS.TARGET_SELF',
-                    '_parent' => 'PLUGINS.EXTERNAL_LINKS.TARGET_PARENT',
-                    '_top' => 'PLUGINS.EXTERNAL_LINKS.TARGET_TOP'
-                ],
-                'validate' => [
-                    'type' => 'string'
-                ],
-                'name' => 'plugins.external_links.target',
-                'validation' => 'strict'
-            ],
-            'plugins.external_links.mode' => [
-                'type' => 'select',
-                'size' => 'large',
-                'classes' => 'fancy',
-                'label' => 'PLUGINS.EXTERNAL_LINKS.MODE',
-                'default' => 'active',
-                'options' => [
-                    'active' => 'PLUGINS.EXTERNAL_LINKS.MODE_ACTIVE',
-                    'passive' => 'PLUGINS.EXTERNAL_LINKS.MODE_PASSIVE'
-                ],
-                'validate' => [
-                    'type' => 'string'
-                ],
-                'name' => 'plugins.external_links.mode',
-                'validation' => 'strict'
-            ],
-            'plugins.feed' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.feed.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.feed.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.feed.limit' => [
-                'type' => 'range',
-                'label' => 'Feed count',
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 10,
-                    'max' => 1000
-                ],
-                'name' => 'plugins.feed.limit',
-                'validation' => 'strict'
-            ],
-            'plugins.feed.title' => [
-                'type' => 'text',
-                'label' => 'Title',
-                'name' => 'plugins.feed.title',
-                'validation' => 'strict'
-            ],
-            'plugins.feed.description' => [
-                'type' => 'textarea',
-                'label' => 'Description',
-                'name' => 'plugins.feed.description',
-                'validation' => 'strict'
-            ],
-            'plugins.feed.length' => [
-                'type' => 'range',
-                'label' => 'Feed Length (0 for full-text feed)',
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 0,
-                    'max' => 10000
-                ],
-                'name' => 'plugins.feed.length',
-                'validation' => 'strict'
-            ],
-            'plugins.feed.enable_json_feed' => [
-                'type' => 'toggle',
-                'label' => 'JSON feed support',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.feed.enable_json_feed',
-                'validation' => 'strict'
-            ],
-            'plugins.feed.show_last_modified' => [
-                'type' => 'toggle',
-                'label' => 'Show last modified date',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.feed.show_last_modified',
                 'validation' => 'strict'
             ],
             'plugins.flex-objects' => [
@@ -5120,6 +4564,181 @@ return [
                 'name' => 'plugins.form.basic_captcha.type',
                 'validation' => 'strict'
             ],
+            'plugins.ganalytics' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.ganalytics.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GANALYTICS.PLUGIN_STATUS',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_GANALYTICS.ENABLED',
+                    0 => 'PLUGIN_GANALYTICS.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.ganalytics.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.trackingId' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_GANALYTICS.TRACKING_ID',
+                'validate' => [
+                    'required' => true
+                ],
+                'name' => 'plugins.ganalytics.trackingId',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.position' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GANALYTICS.POSITION',
+                'hightlight' => 1,
+                'default' => 'head',
+                'options' => [
+                    'head' => 'PLUGIN_GANALYTICS.POSITION_HEAD',
+                    'body' => 'PLUGIN_GANALYTICS.POSITION_BODY'
+                ],
+                'validate' => [
+                    'type' => 'string'
+                ],
+                'name' => 'plugins.ganalytics.position',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.objectName' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GANALYTICS.OBJECT_NAME',
+                'size' => 'small',
+                'default' => 'gtag',
+                'name' => 'plugins.ganalytics.objectName',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.dnt' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GANALYTICS.DNT',
+                'hightlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_GANALYTICS.ENABLED',
+                    0 => 'PLUGIN_GANALYTICS.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.ganalytics.dnt',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.blockedIps' => [
+                'type' => 'array',
+                'size' => 'large',
+                'label' => 'PLUGIN_GANALYTICS.BLOCKED_IPS',
+                'value_only' => true,
+                'name' => 'plugins.ganalytics.blockedIps',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.blockedIpRanges' => [
+                'type' => 'array',
+                'size' => 'large',
+                'label' => 'PLUGIN_GANALYTICS.BLOCKED_IP_RANGES',
+                'value_only' => true,
+                'name' => 'plugins.ganalytics.blockedIpRanges',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.blockingCookie' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GANALYTICS.BLOCKING_COOKIE',
+                'size' => 'small',
+                'default' => 'blockGA',
+                'name' => 'plugins.ganalytics.blockingCookie',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.cookieConfig' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GANALYTICS.COOKIE_CONFIG',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_GANALYTICS._YES',
+                    0 => 'PLUGIN_GANALYTICS._NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.ganalytics.cookieConfig',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.cookiePrefix' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GANALYTICS.COOKIE_PREFIX',
+                'size' => 'small',
+                'default' => '',
+                'name' => 'plugins.ganalytics.cookiePrefix',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.cookieDomain' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GANALYTICS.COOKIE_DOMAIN',
+                'size' => 'medium',
+                'name' => 'plugins.ganalytics.cookieDomain',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.cookieExpires' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'PLUGIN_GANALYTICS.COOKIE_EXPIRES',
+                'append' => 'PLUGIN_GANALYTICS.SECONDS',
+                'default' => 63072000,
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 0
+                ],
+                'name' => 'plugins.ganalytics.cookieExpires',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.optOutEnabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GANALYTICS.OPTOUT_STATUS',
+                'hightlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_GANALYTICS.ENABLED',
+                    0 => 'PLUGIN_GANALYTICS.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.ganalytics.optOutEnabled',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.optOutMessage' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_GANALYTICS.OPTOUT_MESSAGE',
+                'size' => 'medium',
+                'default' => 'Google tracking is now disabled.',
+                'name' => 'plugins.ganalytics.optOutMessage',
+                'validation' => 'strict'
+            ],
+            'plugins.ganalytics.debugMode' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_GANALYTICS.DEBUG_MODE',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_GANALYTICS.ENABLED',
+                    0 => 'PLUGIN_GANALYTICS.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.ganalytics.debugMode',
+                'validation' => 'strict'
+            ],
             'plugins.gantry5' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5276,313 +4895,6 @@ return [
                 'type' => 'hidden',
                 'name' => 'plugins.gantry5._redirect',
                 'validation' => 'loose'
-            ],
-            'plugins.git-sync' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.git-sync.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin Status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.git-sync.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.folders' => [
-                'type' => 'select',
-                'multiple' => true,
-                'label' => 'Folders to Sync',
-                'classes' => 'fancy',
-                'description' => 'Removing folders after they have been synced may cause undesired results.',
-                'default' => [
-                    0 => 'pages'
-                ],
-                'options' => [
-                    0 => 'pages',
-                    1 => 'themes',
-                    2 => 'plugins',
-                    3 => 'config',
-                    4 => 'data'
-                ],
-                'selectize' => [
-                    'create' => true
-                ],
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.git-sync.folders',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.SyncNotice' => [
-                'type' => 'hidden',
-                'markdown' => true,
-                'text' => '! To improve the speed of saving pages you can disable automatic sync. Then, changes to a page will not be sent to the remote repository on every save. To sync your changes to the repository tap the GitSync button (<i class="fa fa-git"></i>) in the top left of the Administration Panel, or use the below Scheduler option to add the GitSync Syncronization Job to the Scheduler (<strong>Grav 1.6 required</strong>).
-',
-                'name' => 'plugins.git-sync.SyncNotice',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.sync' => [
-                'type' => '_parent',
-                'name' => 'plugins.git-sync.sync',
-                'form_field' => false
-            ],
-            'plugins.git-sync.sync.on_save' => [
-                'type' => 'toggle',
-                'label' => 'Sync on Page Save',
-                'default' => 1,
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.git-sync.sync.on_save',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.sync.on_delete' => [
-                'type' => 'toggle',
-                'label' => 'Sync on Page Delete',
-                'default' => 1,
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.git-sync.sync.on_delete',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.sync.on_media' => [
-                'type' => 'toggle',
-                'label' => 'Sync on Media Changes',
-                'default' => 1,
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.git-sync.sync.on_media',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.sync.cron_enable' => [
-                'type' => 'toggle',
-                'label' => 'Add Sync to Scheduler',
-                'default' => 0,
-                'highlight' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.git-sync.sync.cron_enable',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.sync.cron_at' => [
-                'type' => 'cron',
-                'label' => 'Run Sync at',
-                'default' => '0 12,23 * * *',
-                'name' => 'plugins.git-sync.sync.cron_at',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.local_repository' => [
-                'type' => 'hidden',
-                'multiple' => false,
-                'size' => 'medium',
-                'label' => 'Local Repository Path',
-                'name' => 'plugins.git-sync.local_repository',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.repository' => [
-                'type' => 'text',
-                'label' => 'Git Repository',
-                'name' => 'plugins.git-sync.repository',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.no_user' => [
-                'type' => 'toggle',
-                'label' => 'User not required',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'description' => 'With this setting enabled, the user can be left blank and it will be ignored from the authentication. Useful when only needing access tokens `token@host` rather than `user:password@host`',
-                'name' => 'plugins.git-sync.no_user',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.user' => [
-                'type' => 'text',
-                'label' => 'Git User',
-                'autocomplete' => false,
-                'name' => 'plugins.git-sync.user',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.password' => [
-                'type' => 'enc-password',
-                'label' => 'Git Password or Token',
-                'description' => 'Enter your password or token to encrypt and securely store it, then save the settings. It will not show up here for security reasons.',
-                'autocomplete' => false,
-                'name' => 'plugins.git-sync.password',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.webhook' => [
-                'type' => 'text',
-                'label' => 'Repository Web Hook URL',
-                'data-default@' => '\\Grav\\Plugin\\GitSyncPlugin::generateRandomWebhook',
-                'name' => 'plugins.git-sync.webhook',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.webhook_enabled' => [
-                'type' => 'toggle',
-                'label' => 'Web Hook Secret',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'description' => 'With this setting enabled, only authorized webhook calls will be able to trigger a synchronization (recommended)',
-                'name' => 'plugins.git-sync.webhook_enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.webhook_secret' => [
-                'type' => 'text',
-                'label' => 'Repository Web Hook Secret',
-                'data-default@' => '\\Grav\\Plugin\\GitSyncPlugin::generateWebhookSecret',
-                'description' => 'You can either use this randomly generated string or enter your own secret. <br /> **Bitbucket** does not yet support Webhook Secrets.',
-                'markdown' => true,
-                'name' => 'plugins.git-sync.webhook_secret',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.branch' => [
-                'type' => 'text',
-                'default' => 'master',
-                'label' => 'Local Branch',
-                'name' => 'plugins.git-sync.branch',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.remote' => [
-                'type' => '_parent',
-                'name' => 'plugins.git-sync.remote',
-                'form_field' => false
-            ],
-            'plugins.git-sync.remote.name' => [
-                'type' => 'text',
-                'default' => 'origin',
-                'label' => 'Remote Name',
-                'name' => 'plugins.git-sync.remote.name',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.remote.branch' => [
-                'type' => 'text',
-                'default' => 'master',
-                'label' => 'Remote Branch',
-                'name' => 'plugins.git-sync.remote.branch',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git' => [
-                'type' => '_parent',
-                'name' => 'plugins.git-sync.git',
-                'form_field' => false
-            ],
-            'plugins.git-sync.git.author' => [
-                'type' => 'select',
-                'default' => 'gituser',
-                'label' => 'Commits Author',
-                'options' => [
-                    'gituser' => 'Use Git User Name',
-                    'gitsync' => 'Use GitSync Committer Name',
-                    'gravuser' => 'Use Grav User Name',
-                    'gravfull' => 'Use Grav User Full Name'
-                ],
-                'name' => 'plugins.git-sync.git.author',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git.message' => [
-                'type' => 'text',
-                'default' => '(Grav GitSync) Automatic Commit',
-                'label' => 'Commit message',
-                'name' => 'plugins.git-sync.git.message',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git.name' => [
-                'type' => 'text',
-                'default' => 'GitSync',
-                'label' => 'Committer Name',
-                'name' => 'plugins.git-sync.git.name',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git.email' => [
-                'type' => 'text',
-                'default' => 'git-sync@trilby.media',
-                'label' => 'Committer Email',
-                'name' => 'plugins.git-sync.git.email',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git.bin' => [
-                'type' => 'text',
-                'default' => 'git',
-                'label' => 'Git Binary Path',
-                'name' => 'plugins.git-sync.git.bin',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git.ignore' => [
-                'type' => 'textarea',
-                'label' => 'Git Ignore',
-                'rows' => 6,
-                'name' => 'plugins.git-sync.git.ignore',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.git.private_key' => [
-                'type' => 'text',
-                'label' => 'Private SSH Key',
-                'markdown' => true,
-                'description' => 'In order to be able to sparse-checkout and push changes, it is expected you have an ssh-key configured for accessing the repository. This is usually found under `~/.ssh` and it needs to be configured for the same user that runs the web-server. <br /> <br /> Point it to the secret (not the public) and make also sure you have strict permissions to the file. (`-rw-------`). <br /> <br /> Example: `private_key: /home/www-data/.ssh/id_rsa`<br /> <br /> **IMPORTANT**: SSH keys with passphrase are __NOT__ supported. To remove a passphrase, run the `ssh-keygen -p` command and when asked for the new passphrase leave blank and return.
-',
-                'name' => 'plugins.git-sync.git.private_key',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync.logging' => [
-                'type' => 'toggle',
-                'default' => 0,
-                'label' => 'Log Git Commands',
-                'highlight' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.YES',
-                    0 => 'PLUGIN_ADMIN.NO'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.git-sync.logging',
-                'validation' => 'strict'
-            ],
-            'plugins.git-sync._wizard' => [
-                'type' => 'git-wizard',
-                'label' => 'Text Variable',
-                'name' => 'plugins.git-sync._wizard',
-                'validation' => 'strict'
             ],
             'plugins.login' => [
                 'type' => '_root',
@@ -6074,179 +5386,6 @@ return [
                 'name' => 'plugins.login.ipv6_subnet_size',
                 'validation' => 'loose'
             ],
-            'plugins.markdown-notices' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.markdown-notices.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.markdown-notices.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.markdown-notices.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_MARKDOWN_NOTICES.USE_BUILT_IN_CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.markdown-notices.built_in_css',
-                'validation' => 'strict'
-            ],
-            'plugins.markdown-notices.base_classes' => [
-                'type' => 'selectize',
-                'label' => 'PLUGIN_MARKDOWN_NOTICES.BASE_CLASSES',
-                'size' => 'large',
-                'classes' => 'fancy',
-                'validate' => [
-                    'type' => 'string'
-                ],
-                'name' => 'plugins.markdown-notices.base_classes',
-                'validation' => 'strict'
-            ],
-            'plugins.markdown-notices.level_classes' => [
-                'type' => 'selectize',
-                'label' => 'PLUGIN_MARKDOWN_NOTICES.LEVEL_CLASSES',
-                'size' => 'large',
-                'classes' => 'fancy',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.markdown-notices.level_classes',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.prism-highlight.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.prism-highlight.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.theme' => [
-                'type' => 'select',
-                'label' => 'CSS Theme',
-                'default' => 'prism-one-light.css',
-                'size' => 'large',
-                'data-options@' => '\\Grav\\Plugin\\PrismHighlightPlugin::themeOptions',
-                'name' => 'plugins.prism-highlight.theme',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.all-pre-blocks' => [
-                'type' => 'toggle',
-                'label' => 'All Pre Blocks',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.prism-highlight.all-pre-blocks',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.plugins' => [
-                'type' => '_parent',
-                'name' => 'plugins.prism-highlight.plugins',
-                'form_field' => false
-            ],
-            'plugins.prism-highlight.plugins.line-numbers' => [
-                'type' => 'toggle',
-                'label' => 'Line Numbers',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.prism-highlight.plugins.line-numbers',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.plugins.command-line' => [
-                'type' => 'toggle',
-                'label' => 'Command Line',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.prism-highlight.plugins.command-line',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.plugins.command-line-prompt' => [
-                'type' => 'text',
-                'size' => 'small',
-                'label' => 'Command Line Prompt',
-                'name' => 'plugins.prism-highlight.plugins.command-line-prompt',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.custom' => [
-                'type' => '_parent',
-                'name' => 'plugins.prism-highlight.custom',
-                'form_field' => false
-            ],
-            'plugins.prism-highlight.custom.js_location' => [
-                'type' => 'text',
-                'label' => 'Custom JS location',
-                'default' => 'user://data/prism-highlight/prism.js',
-                'name' => 'plugins.prism-highlight.custom.js_location',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.custom.css_location' => [
-                'type' => 'text',
-                'label' => 'Custom CSS location',
-                'default' => 'user://data/prism-highlight/prism.css',
-                'name' => 'plugins.prism-highlight.custom.css_location',
-                'validation' => 'strict'
-            ],
-            'plugins.prism-highlight.custom.theme_location' => [
-                'type' => 'text',
-                'label' => 'Custom CSS location',
-                'default' => 'user://data/prism-highlight/prism.css',
-                'name' => 'plugins.prism-highlight.custom.theme_location',
-                'validation' => 'strict'
-            ],
             'plugins.problems' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -6284,796 +5423,12 @@ return [
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
             ],
-            'plugins.shortcode-core' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.shortcode-core.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin Enabled',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.active' => [
-                'type' => 'toggle',
-                'label' => 'Activated',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.active',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.active_admin' => [
-                'type' => 'toggle',
-                'label' => 'Activated in Admin',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.active_admin',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.admin_pages_only' => [
-                'type' => 'toggle',
-                'label' => 'Admin Real-Pages Only',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.admin_pages_only',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.parser' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'classes' => 'fancy',
-                'label' => 'Processor',
-                'options' => [
-                    'wordpress' => 'WordpressParser',
-                    'regex' => 'RegexParser',
-                    'regular' => 'RegularParser'
-                ],
-                'name' => 'plugins.shortcode-core.parser',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.custom_shortcodes' => [
-                'type' => 'text',
-                'label' => 'Custom Shortcodes',
-                'size' => 'large',
-                'name' => 'plugins.shortcode-core.custom_shortcodes',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.css' => [
-                'type' => '_parent',
-                'name' => 'plugins.shortcode-core.css',
-                'form_field' => false
-            ],
-            'plugins.shortcode-core.css.notice_enabled' => [
-                'type' => 'toggle',
-                'label' => 'Enable Notice Shortcode CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.css.notice_enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.fontawesome' => [
-                'type' => '_parent',
-                'name' => 'plugins.shortcode-core.fontawesome',
-                'form_field' => false
-            ],
-            'plugins.shortcode-core.fontawesome.load' => [
-                'type' => 'toggle',
-                'label' => 'Load Fontawesome Library',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.fontawesome.load',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.fontawesome.url' => [
-                'type' => 'text',
-                'label' => 'Fontawesome URL',
-                'size' => 'large',
-                'name' => 'plugins.shortcode-core.fontawesome.url',
-                'validation' => 'strict'
-            ],
-            'plugins.shortcode-core.fontawesome.v5' => [
-                'type' => 'toggle',
-                'label' => 'Use Fontawesome Version 5',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.shortcode-core.fontawesome.v5',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.simplesearch.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.search_content' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'classes' => 'fancy',
-                'label' => 'PLUGIN_SIMPLESEARCH.SEARCH_CONTENT',
-                'default' => 'rendered',
-                'options' => [
-                    'rendered' => 'PLUGIN_SIMPLESEARCH.RENDERED_CONTENT',
-                    'raw' => 'PLUGIN_SIMPLESEARCH.RAW_CONTENT'
-                ],
-                'name' => 'plugins.simplesearch.search_content',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.built_in_css' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_SIMPLESEARCH.BUILTIN_CSS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.built_in_css',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.built_in_js' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_SIMPLESEARCH.BUILTIN_JS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.built_in_js',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.display_button' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_SIMPLESEARCH.DISPLAY_SEARCH_BUTTON',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.display_button',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.ignore_accented_characters' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_SIMPLESEARCH.IGNORE_ACCENDED_CHARACTERS',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.simplesearch.ignore_accented_characters',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.min_query_length' => [
-                'type' => 'text',
-                'size' => 'x-small',
-                'label' => 'PLUGIN_SIMPLESEARCH.MIN_QUERY_LENGTH',
-                'validate' => [
-                    'type' => 'number',
-                    'min' => 0
-                ],
-                'name' => 'plugins.simplesearch.min_query_length',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.route' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'PLUGIN_SIMPLESEARCH.SEARCH_PAGE_ROUTE',
-                'default' => '/random',
-                'name' => 'plugins.simplesearch.route',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.searchable_types' => [
-                'type' => 'checkboxes',
-                'label' => 'PLUGIN_SIMPLESEARCH.SEARCHABLE_TYPES',
-                'description' => 'PLUGIN_SIMPLESEARCH.SEARCHABLE_TYPES_DESCRIPTION',
-                'options' => [
-                    'title' => 'Title',
-                    'content' => 'Content',
-                    'header' => 'Header',
-                    'taxonomy' => 'Taxonomy'
-                ],
-                'use' => 'keys',
-                'name' => 'plugins.simplesearch.searchable_types',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.header_keys_ignored' => [
-                'type' => 'selectize',
-                'size' => 'large',
-                'label' => 'PLUGIN_SIMPLESEARCH.HEADER_KEYS_IGNORED',
-                'classes' => 'fancy',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.simplesearch.header_keys_ignored',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.template' => [
-                'type' => 'text',
-                'size' => 'medium',
-                'label' => 'PLUGIN_SIMPLESEARCH.SEARCH_PAGE_TEMPLATE',
-                'default' => 'simplesearch_results',
-                'name' => 'plugins.simplesearch.template',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.filters' => [
-                'type' => '_parent',
-                'name' => 'plugins.simplesearch.filters',
-                'form_field' => false
-            ],
-            'plugins.simplesearch.filters.category' => [
-                'type' => 'selectize',
-                'label' => 'PLUGIN_SIMPLESEARCH.CATEGORY_FILTER',
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.simplesearch.filters.category',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.filter_combinator' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'classes' => 'fancy',
-                'label' => 'PLUGIN_SIMPLESEARCH.FILTER_COMBINATOR',
-                'default' => 'and',
-                'options' => [
-                    'and' => 'PLUGIN_SIMPLESEARCH.AND_COMBINATOR',
-                    'or' => 'PLUGIN_SIMPLESEARCH.OR_COMBINATOR'
-                ],
-                'name' => 'plugins.simplesearch.filter_combinator',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.order' => [
-                'type' => '_parent',
-                'name' => 'plugins.simplesearch.order',
-                'form_field' => false
-            ],
-            'plugins.simplesearch.order.by' => [
-                'type' => 'select',
-                'size' => 'long',
-                'classes' => 'fancy',
-                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDERING',
-                'options' => [
-                    'default' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT',
-                    'folder' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER',
-                    'title' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE',
-                    'date' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DATE'
-                ],
-                'name' => 'plugins.simplesearch.order.by',
-                'validation' => 'strict'
-            ],
-            'plugins.simplesearch.order.dir' => [
-                'type' => 'toggle',
-                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION',
-                'highlight' => 'asc',
-                'default' => 'desc',
-                'options' => [
-                    'asc' => 'PLUGIN_ADMIN.ASCENDING',
-                    'desc' => 'PLUGIN_ADMIN.DESCENDING'
-                ],
-                'name' => 'plugins.simplesearch.order.dir',
-                'validation' => 'strict'
-            ],
-            'plugins.themer' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.themer.enabled' => [
-                'type' => 'toggle',
-                'label' => 'PLUGINS.THEMER.PLUGIN_STATUS',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.themer.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.themer.templates' => [
-                'type' => 'themeselect',
-                'label' => 'PLUGINS.THEMER.TEMPLATES',
-                'selectize' => true,
-                'multiple' => true,
-                'validate' => [
-                    'type' => 'commalist'
-                ],
-                'name' => 'plugins.themer.templates',
-                'validation' => 'strict'
-            ],
             'themes.g5_hydrogen' => [
                 'type' => '_root',
                 'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
                 ]
-            ],
-            'themes.learn2' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'loose'
-                ]
-            ],
-            'themes' => [
-                'type' => '_parent',
-                'name' => 'themes',
-                'form_field' => false
-            ],
-            'themes.learn2.top_level_version' => [
-                'type' => 'toggle',
-                'label' => 'Top Level Version',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.learn2.top_level_version',
-                'validation' => 'loose'
-            ],
-            'themes.learn2.home_url' => [
-                'type' => 'text',
-                'label' => 'Home URL',
-                'validate' => [
-                    'type' => 'text'
-                ],
-                'name' => 'themes.learn2.home_url',
-                'validation' => 'loose'
-            ],
-            'themes.learn2.google_analytics_code' => [
-                'type' => 'text',
-                'label' => 'Google Analytics Code',
-                'validate' => [
-                    'type' => 'text'
-                ],
-                'name' => 'themes.learn2.google_analytics_code',
-                'validation' => 'loose'
-            ],
-            'themes.learn2.github' => [
-                'type' => '_parent',
-                'name' => 'themes.learn2.github',
-                'form_field' => false
-            ],
-            'themes.learn2.github.position' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'classes' => 'fancy',
-                'label' => 'GitHub Position',
-                'options' => [
-                    'top' => 'Top',
-                    'bottom' => 'Bottom',
-                    '' => false
-                ],
-                'name' => 'themes.learn2.github.position',
-                'validation' => 'loose'
-            ],
-            'themes.learn2.github.tree' => [
-                'type' => 'text',
-                'label' => 'GitHub Tree',
-                'default' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/',
-                'name' => 'themes.learn2.github.tree',
-                'validation' => 'loose'
-            ],
-            'themes.learn2.github.commits' => [
-                'type' => 'text',
-                'label' => 'GitHub Commits',
-                'default' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/',
-                'name' => 'themes.learn2.github.commits',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'loose'
-                ]
-            ],
-            'themes.learn2-git-sync.github' => [
-                'type' => '_parent',
-                'name' => 'themes.learn2-git-sync.github',
-                'form_field' => false
-            ],
-            'themes.learn2-git-sync.github.position' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'classes' => 'fancy',
-                'label' => 'Git Link Position',
-                'options' => [
-                    'top' => 'Top',
-                    'bottom' => 'Bottom',
-                    '' => false
-                ],
-                'name' => 'themes.learn2-git-sync.github.position',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.github.icon' => [
-                'type' => 'input.text',
-                'size' => 'small',
-                'label' => 'Custom Git Link Font Awesome Icon',
-                'description' => 'Icon short name.',
-                'validate' => [
-                    'type' => 'text'
-                ],
-                'name' => 'themes.learn2-git-sync.github.icon',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.github.tree' => [
-                'type' => 'text',
-                'label' => 'Custom Git Repository Tree URL',
-                'description' => 'URL path to the pages folder, but with \'/pages\' and everything following it removed. For example, \'https://github.com/paulhibbitts/demo-grav-learn2-with-git-sync/tree/master\'.',
-                'name' => 'themes.learn2-git-sync.github.tree',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.enable_doc_versioning' => [
-                'type' => 'toggle',
-                'label' => 'Document Versioning',
-                'description' => 'Support display of version specific docs using the multi-language feature.',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.learn2-git-sync.enable_doc_versioning',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.hide_site_title' => [
-                'type' => 'toggle',
-                'label' => 'Hide Site Title',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Yes',
-                    0 => 'No'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.learn2-git-sync.hide_site_title',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.style' => [
-                'type' => 'select',
-                'size' => 'medium',
-                'label' => 'Style',
-                'description' => 'Custom style selection.',
-                'default' => 'default',
-                'options' => [
-                    'default' => 'Default',
-                    'hoth' => 'Hoth',
-                    'longyearbyen' => 'Longyearbyen',
-                    'spitsbergen' => 'Spitsbergen (Hoth v2)'
-                ],
-                'name' => 'themes.learn2-git-sync.style',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.top_level_version' => [
-                'type' => 'toggle',
-                'label' => 'Top Level Version',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.learn2-git-sync.top_level_version',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.home_url' => [
-                'type' => 'text',
-                'label' => 'Home URL',
-                'validate' => [
-                    'type' => 'text'
-                ],
-                'name' => 'themes.learn2-git-sync.home_url',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.google_analytics_code' => [
-                'type' => 'text',
-                'label' => 'Google Analytics Code',
-                'validate' => [
-                    'type' => 'text'
-                ],
-                'name' => 'themes.learn2-git-sync.google_analytics_code',
-                'validation' => 'loose'
-            ],
-            'themes.learn2-git-sync.default_taxonomy_category' => [
-                'type' => 'text',
-                'label' => 'Default Taxonomy Category',
-                'validate' => [
-                    'required' => true
-                ],
-                'name' => 'themes.learn2-git-sync.default_taxonomy_category',
-                'validation' => 'loose'
-            ],
-            'themes.quark' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'loose'
-                ]
-            ],
-            'themes.quark.production-mode' => [
-                'type' => 'toggle',
-                'label' => 'Production mode',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.production-mode',
-                'validation' => 'loose'
-            ],
-            'themes.quark.grid-size' => [
-                'type' => 'select',
-                'label' => 'THEME_QUARK.ADMIN.GRID_SIZE',
-                'size' => 'small',
-                'options' => [
-                    '' => 'None (full width)',
-                    'grid-xl' => 'Extra Large',
-                    'grid-lg' => 'Large',
-                    'grid-md' => 'Medium'
-                ],
-                'name' => 'themes.quark.grid-size',
-                'validation' => 'loose'
-            ],
-            'themes.quark.custom_logo' => [
-                'array' => true,
-                'media_field' => true,
-                'validate' => [
-                    'type' => 'ignore'
-                ],
-                'type' => 'file',
-                'label' => 'Custom Logo',
-                'size' => 'large',
-                'destination' => 'theme://images/logo',
-                'multiple' => false,
-                'markdown' => true,
-                'description' => 'Will be used instead of default logo `theme://images/grav-logo.svg`',
-                'accept' => [
-                    0 => 'image/*'
-                ],
-                'name' => 'themes.quark.custom_logo',
-                'validation' => 'loose'
-            ],
-            'themes.quark.custom_logo_mobile' => [
-                'array' => true,
-                'media_field' => true,
-                'validate' => [
-                    'type' => 'ignore'
-                ],
-                'type' => 'file',
-                'label' => 'Mobile Custom Logo',
-                'size' => 'large',
-                'destination' => 'theme://images/logo',
-                'multiple' => false,
-                'accept' => [
-                    0 => 'image/*'
-                ],
-                'name' => 'themes.quark.custom_logo_mobile',
-                'validation' => 'loose'
-            ],
-            'themes.quark.header-fixed' => [
-                'type' => 'toggle',
-                'label' => 'Fixed header',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.header-fixed',
-                'validation' => 'loose'
-            ],
-            'themes.quark.header-animated' => [
-                'type' => 'toggle',
-                'label' => 'Animated',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.header-animated',
-                'validation' => 'loose'
-            ],
-            'themes.quark.header-dark' => [
-                'type' => 'toggle',
-                'label' => 'Dark Style',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.header-dark',
-                'validation' => 'loose'
-            ],
-            'themes.quark.header-transparent' => [
-                'type' => 'toggle',
-                'label' => 'Transparent',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.header-transparent',
-                'validation' => 'loose'
-            ],
-            'themes.quark.sticky-footer' => [
-                'type' => 'toggle',
-                'label' => 'Sticky footer',
-                'highlight' => 1,
-                'default' => 1,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.sticky-footer',
-                'validation' => 'loose'
-            ],
-            'themes.quark.blog-page' => [
-                'type' => 'text',
-                'label' => 'Blog Page',
-                'size' => 'medium',
-                'default' => '/blog',
-                'name' => 'themes.quark.blog-page',
-                'validation' => 'loose'
-            ],
-            'themes.quark.spectre' => [
-                'type' => '_parent',
-                'name' => 'themes.quark.spectre',
-                'form_field' => false
-            ],
-            'themes.quark.spectre.exp' => [
-                'type' => 'toggle',
-                'label' => 'Experimentals CSS',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.spectre.exp',
-                'validation' => 'loose'
-            ],
-            'themes.quark.spectre.icons' => [
-                'type' => 'toggle',
-                'label' => 'Icons CSS',
-                'highlight' => 0,
-                'default' => 0,
-                'options' => [
-                    1 => 'PLUGIN_ADMIN.ENABLED',
-                    0 => 'PLUGIN_ADMIN.DISABLED'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'themes.quark.spectre.icons',
-                'validation' => 'loose'
             ]
         ],
         'rules' => [
@@ -7505,27 +5860,6 @@ return [
                         'resize_quality' => 'plugins.admin.pagemedia.resize_quality'
                     ]
                 ],
-                'anchors' => [
-                    'enabled' => 'plugins.anchors.enabled',
-                    'active' => 'plugins.anchors.active',
-                    'selectors' => 'plugins.anchors.selectors',
-                    'placement' => 'plugins.anchors.placement',
-                    'visible' => 'plugins.anchors.visible',
-                    'icon' => 'plugins.anchors.icon',
-                    'class' => 'plugins.anchors.class',
-                    'truncate' => 'plugins.anchors.truncate',
-                    'copy_to_clipboard' => 'plugins.anchors.copy_to_clipboard'
-                ],
-                'breadcrumbs' => [
-                    'enabled' => 'plugins.breadcrumbs.enabled',
-                    'show_all' => 'plugins.breadcrumbs.show_all',
-                    'built_in_css' => 'plugins.breadcrumbs.built_in_css',
-                    'include_home' => 'plugins.breadcrumbs.include_home',
-                    'include_current' => 'plugins.breadcrumbs.include_current',
-                    'icon_home' => 'plugins.breadcrumbs.icon_home',
-                    'icon_divider_classes' => 'plugins.breadcrumbs.icon_divider_classes',
-                    'link_trailing' => 'plugins.breadcrumbs.link_trailing'
-                ],
                 'email' => [
                     'enabled' => 'plugins.email.enabled',
                     'mailer' => [
@@ -7555,34 +5889,6 @@ return [
                     'routes' => [
                         404 => 'plugins.error.routes.404'
                     ]
-                ],
-                'external_links' => [
-                    'enabled' => 'plugins.external_links.enabled',
-                    'built_in_css' => 'plugins.external_links.built_in_css',
-                    'weight' => 'plugins.external_links.weight',
-                    'links' => [
-                        'www' => 'plugins.external_links.links.www',
-                        'redirects' => 'plugins.external_links.links.redirects',
-                        'schemes' => 'plugins.external_links.links.schemes'
-                    ],
-                    'exclude' => [
-                        'classes' => 'plugins.external_links.exclude.classes',
-                        'domains' => 'plugins.external_links.exclude.domains'
-                    ],
-                    'process' => 'plugins.external_links.process',
-                    'title' => 'plugins.external_links.title',
-                    'no_follow' => 'plugins.external_links.no_follow',
-                    'target' => 'plugins.external_links.target',
-                    'mode' => 'plugins.external_links.mode'
-                ],
-                'feed' => [
-                    'enabled' => 'plugins.feed.enabled',
-                    'limit' => 'plugins.feed.limit',
-                    'title' => 'plugins.feed.title',
-                    'description' => 'plugins.feed.description',
-                    'length' => 'plugins.feed.length',
-                    'enable_json_feed' => 'plugins.feed.enable_json_feed',
-                    'show_last_modified' => 'plugins.feed.show_last_modified'
                 ],
                 'flex-objects' => [
                     'enabled' => 'plugins.flex-objects.enabled',
@@ -7638,6 +5944,23 @@ return [
                         ]
                     ]
                 ],
+                'ganalytics' => [
+                    'enabled' => 'plugins.ganalytics.enabled',
+                    'trackingId' => 'plugins.ganalytics.trackingId',
+                    'position' => 'plugins.ganalytics.position',
+                    'objectName' => 'plugins.ganalytics.objectName',
+                    'dnt' => 'plugins.ganalytics.dnt',
+                    'blockedIps' => 'plugins.ganalytics.blockedIps',
+                    'blockedIpRanges' => 'plugins.ganalytics.blockedIpRanges',
+                    'blockingCookie' => 'plugins.ganalytics.blockingCookie',
+                    'cookieConfig' => 'plugins.ganalytics.cookieConfig',
+                    'cookiePrefix' => 'plugins.ganalytics.cookiePrefix',
+                    'cookieDomain' => 'plugins.ganalytics.cookieDomain',
+                    'cookieExpires' => 'plugins.ganalytics.cookieExpires',
+                    'optOutEnabled' => 'plugins.ganalytics.optOutEnabled',
+                    'optOutMessage' => 'plugins.ganalytics.optOutMessage',
+                    'debugMode' => 'plugins.ganalytics.debugMode'
+                ],
                 'gantry5' => [
                     'enabled' => 'plugins.gantry5.enabled',
                     'production' => 'plugins.gantry5.production',
@@ -7650,42 +5973,6 @@ return [
                     'compile_yaml' => 'plugins.gantry5.compile_yaml',
                     'compile_twig' => 'plugins.gantry5.compile_twig',
                     '_redirect' => 'plugins.gantry5._redirect'
-                ],
-                'git-sync' => [
-                    'enabled' => 'plugins.git-sync.enabled',
-                    'folders' => 'plugins.git-sync.folders',
-                    'SyncNotice' => 'plugins.git-sync.SyncNotice',
-                    'sync' => [
-                        'on_save' => 'plugins.git-sync.sync.on_save',
-                        'on_delete' => 'plugins.git-sync.sync.on_delete',
-                        'on_media' => 'plugins.git-sync.sync.on_media',
-                        'cron_enable' => 'plugins.git-sync.sync.cron_enable',
-                        'cron_at' => 'plugins.git-sync.sync.cron_at'
-                    ],
-                    'local_repository' => 'plugins.git-sync.local_repository',
-                    'repository' => 'plugins.git-sync.repository',
-                    'no_user' => 'plugins.git-sync.no_user',
-                    'user' => 'plugins.git-sync.user',
-                    'password' => 'plugins.git-sync.password',
-                    'webhook' => 'plugins.git-sync.webhook',
-                    'webhook_enabled' => 'plugins.git-sync.webhook_enabled',
-                    'webhook_secret' => 'plugins.git-sync.webhook_secret',
-                    'branch' => 'plugins.git-sync.branch',
-                    'remote' => [
-                        'name' => 'plugins.git-sync.remote.name',
-                        'branch' => 'plugins.git-sync.remote.branch'
-                    ],
-                    'git' => [
-                        'author' => 'plugins.git-sync.git.author',
-                        'message' => 'plugins.git-sync.git.message',
-                        'name' => 'plugins.git-sync.git.name',
-                        'email' => 'plugins.git-sync.git.email',
-                        'bin' => 'plugins.git-sync.git.bin',
-                        'ignore' => 'plugins.git-sync.git.ignore',
-                        'private_key' => 'plugins.git-sync.git.private_key'
-                    ],
-                    'logging' => 'plugins.git-sync.logging',
-                    '_wizard' => 'plugins.git-sync._wizard'
                 ],
                 'login' => [
                     'enabled' => 'plugins.login.enabled',
@@ -7737,115 +6024,13 @@ return [
                     'max_login_interval' => 'plugins.login.max_login_interval',
                     'ipv6_subnet_size' => 'plugins.login.ipv6_subnet_size'
                 ],
-                'markdown-notices' => [
-                    'enabled' => 'plugins.markdown-notices.enabled',
-                    'built_in_css' => 'plugins.markdown-notices.built_in_css',
-                    'base_classes' => 'plugins.markdown-notices.base_classes',
-                    'level_classes' => 'plugins.markdown-notices.level_classes'
-                ],
-                'prism-highlight' => [
-                    'enabled' => 'plugins.prism-highlight.enabled',
-                    'theme' => 'plugins.prism-highlight.theme',
-                    'all-pre-blocks' => 'plugins.prism-highlight.all-pre-blocks',
-                    'plugins' => [
-                        'line-numbers' => 'plugins.prism-highlight.plugins.line-numbers',
-                        'command-line' => 'plugins.prism-highlight.plugins.command-line',
-                        'command-line-prompt' => 'plugins.prism-highlight.plugins.command-line-prompt'
-                    ],
-                    'custom' => [
-                        'js_location' => 'plugins.prism-highlight.custom.js_location',
-                        'css_location' => 'plugins.prism-highlight.custom.css_location',
-                        'theme_location' => 'plugins.prism-highlight.custom.theme_location'
-                    ]
-                ],
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
-                ],
-                'shortcode-core' => [
-                    'enabled' => 'plugins.shortcode-core.enabled',
-                    'active' => 'plugins.shortcode-core.active',
-                    'active_admin' => 'plugins.shortcode-core.active_admin',
-                    'admin_pages_only' => 'plugins.shortcode-core.admin_pages_only',
-                    'parser' => 'plugins.shortcode-core.parser',
-                    'custom_shortcodes' => 'plugins.shortcode-core.custom_shortcodes',
-                    'css' => [
-                        'notice_enabled' => 'plugins.shortcode-core.css.notice_enabled'
-                    ],
-                    'fontawesome' => [
-                        'load' => 'plugins.shortcode-core.fontawesome.load',
-                        'url' => 'plugins.shortcode-core.fontawesome.url',
-                        'v5' => 'plugins.shortcode-core.fontawesome.v5'
-                    ]
-                ],
-                'simplesearch' => [
-                    'enabled' => 'plugins.simplesearch.enabled',
-                    'search_content' => 'plugins.simplesearch.search_content',
-                    'built_in_css' => 'plugins.simplesearch.built_in_css',
-                    'built_in_js' => 'plugins.simplesearch.built_in_js',
-                    'display_button' => 'plugins.simplesearch.display_button',
-                    'ignore_accented_characters' => 'plugins.simplesearch.ignore_accented_characters',
-                    'min_query_length' => 'plugins.simplesearch.min_query_length',
-                    'route' => 'plugins.simplesearch.route',
-                    'searchable_types' => 'plugins.simplesearch.searchable_types',
-                    'header_keys_ignored' => 'plugins.simplesearch.header_keys_ignored',
-                    'template' => 'plugins.simplesearch.template',
-                    'filters' => [
-                        'category' => 'plugins.simplesearch.filters.category'
-                    ],
-                    'filter_combinator' => 'plugins.simplesearch.filter_combinator',
-                    'order' => [
-                        'by' => 'plugins.simplesearch.order.by',
-                        'dir' => 'plugins.simplesearch.order.dir'
-                    ]
-                ],
-                'themer' => [
-                    'enabled' => 'plugins.themer.enabled',
-                    'templates' => 'plugins.themer.templates'
                 ]
             ],
             'themes' => [
-                'g5_hydrogen' => 'themes.g5_hydrogen',
-                'learn2' => [
-                    'top_level_version' => 'themes.learn2.top_level_version',
-                    'home_url' => 'themes.learn2.home_url',
-                    'google_analytics_code' => 'themes.learn2.google_analytics_code',
-                    'github' => [
-                        'position' => 'themes.learn2.github.position',
-                        'tree' => 'themes.learn2.github.tree',
-                        'commits' => 'themes.learn2.github.commits'
-                    ]
-                ],
-                'learn2-git-sync' => [
-                    'github' => [
-                        'position' => 'themes.learn2-git-sync.github.position',
-                        'icon' => 'themes.learn2-git-sync.github.icon',
-                        'tree' => 'themes.learn2-git-sync.github.tree'
-                    ],
-                    'enable_doc_versioning' => 'themes.learn2-git-sync.enable_doc_versioning',
-                    'hide_site_title' => 'themes.learn2-git-sync.hide_site_title',
-                    'style' => 'themes.learn2-git-sync.style',
-                    'top_level_version' => 'themes.learn2-git-sync.top_level_version',
-                    'home_url' => 'themes.learn2-git-sync.home_url',
-                    'google_analytics_code' => 'themes.learn2-git-sync.google_analytics_code',
-                    'default_taxonomy_category' => 'themes.learn2-git-sync.default_taxonomy_category'
-                ],
-                'quark' => [
-                    'production-mode' => 'themes.quark.production-mode',
-                    'grid-size' => 'themes.quark.grid-size',
-                    'custom_logo' => 'themes.quark.custom_logo',
-                    'custom_logo_mobile' => 'themes.quark.custom_logo_mobile',
-                    'header-fixed' => 'themes.quark.header-fixed',
-                    'header-animated' => 'themes.quark.header-animated',
-                    'header-dark' => 'themes.quark.header-dark',
-                    'header-transparent' => 'themes.quark.header-transparent',
-                    'sticky-footer' => 'themes.quark.sticky-footer',
-                    'blog-page' => 'themes.quark.blog-page',
-                    'spectre' => [
-                        'exp' => 'themes.quark.spectre.exp',
-                        'icons' => 'themes.quark.spectre.icons'
-                    ]
-                ]
+                'g5_hydrogen' => 'themes.g5_hydrogen'
             ]
         ],
         'dynamic' => [

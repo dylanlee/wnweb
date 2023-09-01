@@ -2,55 +2,60 @@
 return [
     '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/data/gantry5/themes/g5_hydrogen/config/untitled/index.yaml',
-    'modified' => 1693407536,
+    'modified' => 1693577208,
     'data' => [
         'name' => 'untitled',
-        'timestamp' => 1693407536,
+        'timestamp' => 1693577208,
         'version' => 7,
         'preset' => [
-            'image' => 'gantry-admin://images/layouts/home.png',
-            'name' => 'home',
+            'image' => 'gantry-admin://images/layouts/2-col-left.png',
+            'name' => '2_column_-_left',
             'timestamp' => 1693297350
         ],
         'positions' => [
+            'header' => 'Header',
+            'sidebar' => 'Sidebar',
+            'breadcrumbs' => 'Breadcrumbs',
             'footer' => 'Footer'
         ],
         'sections' => [
             'header' => 'Header',
             'navigation' => 'Navigation',
-            'showcase' => 'Showcase',
-            'feature' => 'Feature',
-            'subfeature' => 'Subfeature',
+            'sidebar' => 'Sidebar',
             'main' => 'Main',
             'footer' => 'Footer',
             'offcanvas' => 'Offcanvas'
         ],
         'particles' => [
-            'menu' => [
-                'menu-1072' => 'Menu'
-            ],
-            'sample' => [
-                'sample-1' => 'Gantry 5',
-                'sample-2' => 'Getting Started',
-                'sample-3' => 'Key Features'
-            ],
-            'messages' => [
-                'system-messages-7049' => 'System Messages'
+            'logo' => [
+                'logo-1016' => 'Logo'
             ],
             'position' => [
+                'position-header' => 'Header',
+                'position-sidebar' => 'Sidebar',
+                'position-breadcrumbs' => 'Breadcrumbs',
                 'position-footer' => 'Footer'
             ],
-            'copyright' => [
-                'copyright-6009' => 'Copyright'
+            'menu' => [
+                'menu-7106' => 'Menu'
             ],
-            'social' => [
-                'social-3796' => 'Social'
+            'messages' => [
+                'system-messages-1401' => 'System Messages'
+            ],
+            'content' => [
+                'system-content-7902' => 'Page Content'
+            ],
+            'copyright' => [
+                'copyright-8307' => 'Copyright'
+            ],
+            'spacer' => [
+                'spacer-5639' => 'Spacer'
             ],
             'branding' => [
-                'branding-5276' => 'Branding'
+                'branding-3302' => 'Branding'
             ],
             'mobile-menu' => [
-                'mobile-menu-5038' => 'Mobile Menu'
+                'mobile-menu-8446' => 'Mobile-menu'
             ]
         ],
         'inherit' => [

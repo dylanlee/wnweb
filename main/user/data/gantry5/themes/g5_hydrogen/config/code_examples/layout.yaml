@@ -1,0 +1,66 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/2-col-left.png'
+  name: 2_column_-_left
+  timestamp: 1693297350
+layout:
+  header: {  }
+  navigation: {  }
+  /container-main/:
+    -
+      -
+        'sidebar 20': {  }
+      -
+        'main 80': {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: tutorial_documents
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    inherit:
+      outline: tutorial_documents
+      include:
+        - attributes
+        - block
+        - children
+    block:
+      fixed: 1
+  main:
+    inherit:
+      outline: tutorial_documents
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: tutorial_documents
+      include:
+        - attributes
+        - block
+        - children
+  offcanvas:
+    inherit:
+      outline: tutorial_documents
+      include:
+        - attributes
+        - block
+        - children

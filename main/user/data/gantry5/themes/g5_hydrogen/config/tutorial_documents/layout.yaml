@@ -1,0 +1,72 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/2-col-left.png'
+  name: 2_column_-_left
+  timestamp: 1693297350
+layout:
+  header: {  }
+  /navigation/:
+    -
+      - menu-7106
+  /container-main/:
+    -
+      -
+        'sidebar 20':
+          -
+            - custom-9583
+          -
+            - position-sidebar
+      -
+        'main 80':
+          -
+            - position-breadcrumbs
+          -
+            - system-messages-1401
+          -
+            - system-content-7902
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-8307 40'
+      - 'spacer-5639 30'
+      - 'branding-3302 30'
+  offcanvas:
+    -
+      - mobile-menu-8446
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+    subtype: aside
+    block:
+      fixed: 1
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  custom-9583:
+    title: 'Custom HTML'
+    attributes:
+      html: 'Menu will go here'
+  position-sidebar:
+    attributes:
+      key: sidebar
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-footer:
+    attributes:
+      key: footer

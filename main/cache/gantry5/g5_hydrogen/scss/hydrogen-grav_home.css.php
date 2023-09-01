@@ -1,7 +1,7 @@
 <?php
 return [
     'file' => 'gantry-theme://css-compiled/hydrogen-grav_home.css',
-    'timestamp' => 1693410050,
+    'timestamp' => 1693593937,
     'md5' => '5ef02fa9254dda90db1a8964af4330fc',
     'variables' => [
         'accent-color-1' => '#3180c2',

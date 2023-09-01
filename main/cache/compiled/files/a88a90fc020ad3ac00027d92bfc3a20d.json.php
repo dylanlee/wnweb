@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => '/var/www/html/user/data/flex/indexes/pages.json',
-    'modified' => 1693339531,
-    'size' => 1754,
+    'modified' => 1693593889,
+    'size' => 1772,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1693339531,
+        'timestamp' => 1693593889,
         'count' => 7,
         'index' => [
             '' => [
@@ -50,41 +50,41 @@ return [
                 'key' => 'tools-and-training',
                 'storage_key' => '03.tools-and-training',
                 'template' => 'default',
-                'storage_timestamp' => 1693299674,
+                'storage_timestamp' => 1693593888,
                 'markdown' => [
                     '' => [
                         'default' => 1693299212
                     ]
                 ],
                 'children' => [
-                    'code-examples' => 1693299466,
-                    'water-node-tutorials' => 1693299674
+                    '01.code-examples' => 1693593303,
+                    '02.water-node-tutorials' => 1693593888
                 ],
-                'checksum' => '2531f9b373687987a04c829e08e5f47e'
+                'checksum' => '5d9916cb82aa29f5daa8d548cd687b57'
             ],
-            '03.tools-and-training/code-examples' => [
+            '03.tools-and-training/01.code-examples' => [
                 'key' => 'tools-and-training/code-examples',
-                'storage_key' => '03.tools-and-training/code-examples',
+                'storage_key' => '03.tools-and-training/01.code-examples',
                 'template' => 'default',
-                'storage_timestamp' => 1693301149,
+                'storage_timestamp' => 1693593303,
                 'markdown' => [
                     '' => [
                         'default' => 1693301059
                     ]
                 ],
-                'checksum' => '07580d99b95c4745401002c2249a2344'
+                'checksum' => '711cd6352cd71b62ab6531af9bc41bfb'
             ],
-            '03.tools-and-training/water-node-tutorials' => [
+            '03.tools-and-training/02.water-node-tutorials' => [
                 'key' => 'tools-and-training/water-node-tutorials',
-                'storage_key' => '03.tools-and-training/water-node-tutorials',
+                'storage_key' => '03.tools-and-training/02.water-node-tutorials',
                 'template' => 'default',
-                'storage_timestamp' => 1693300963,
+                'storage_timestamp' => 1693593888,
                 'markdown' => [
                     '' => [
                         'default' => 1693300963
                     ]
                 ],
-                'checksum' => '91eeef7198f199737e45801d84c1581e'
+                'checksum' => '14cc032ef21c16c1882b6781e6ddde3d'
             ],
             '04.about' => [
                 'key' => 'about',

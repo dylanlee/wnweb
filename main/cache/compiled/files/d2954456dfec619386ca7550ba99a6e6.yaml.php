@@ -2,16 +2,32 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/config/site.yaml',
-    'modified' => 1693292743,
-    'size' => 160,
+    'modified' => 1693594330,
+    'size' => 311,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Water Prediction Node',
+        'default_lang' => 'en',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@example.com'
+            'name' => 'Adam Warnock',
+            'email' => 'akwarnock@ua.edu'
+        ],
+        'taxonomies' => [
+            0 => 'category',
+            1 => 'tag'
         ],
         'metadata' => [
-            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+            'description' => 'A NOAA Coast Watch Node'
+        ],
+        'summary' => [
+            'enabled' => true,
+            'format' => 'short',
+            'size' => 300,
+            'delimiter' => '==='
+        ],
+        'redirects' => NULL,
+        'routes' => NULL,
+        'blog' => [
+            'route' => '/blog'
         ]
     ]
 ];

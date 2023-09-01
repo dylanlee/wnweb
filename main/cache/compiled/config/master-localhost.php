@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1693298575,
-    'checksum' => 'e0aab1873beca62d165bc8246bd4b064',
+    'timestamp' => 1693594331,
+    'checksum' => 'd0f2b524e16c0b7f5ca18bc7dde3e2d7',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1693296812
+            ],
+            'plugins/ganalytics' => [
+                'file' => 'user/config/plugins/ganalytics.yaml',
+                'modified' => 1693576904
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,11 +19,11 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1693292743
+                'modified' => 1693594330
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1693297778
+                'modified' => 1693576691
             ],
             'themes/g5_hydrogen' => [
                 'file' => 'user/config/themes/g5_hydrogen.yaml',
@@ -65,14 +69,6 @@ return [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1693292712
             ],
-            'plugins/anchors' => [
-                'file' => 'user/plugins/anchors/anchors.yaml',
-                'modified' => 1693297478
-            ],
-            'plugins/breadcrumbs' => [
-                'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
-                'modified' => 1693297482
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1693292695
@@ -80,14 +76,6 @@ return [
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
                 'modified' => 1693292694
-            ],
-            'plugins/external_links' => [
-                'file' => 'user/plugins/external_links/external_links.yaml',
-                'modified' => 1693297486
-            ],
-            'plugins/feed' => [
-                'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1693297490
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
@@ -97,59 +85,27 @@ return [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1693292707
             ],
+            'plugins/ganalytics' => [
+                'file' => 'user/plugins/ganalytics/ganalytics.yaml',
+                'modified' => 1693576686
+            ],
             'plugins/gantry5' => [
                 'file' => 'user/plugins/gantry5/gantry5.yaml',
                 'modified' => 1693297168
-            ],
-            'plugins/git-sync' => [
-                'file' => 'user/plugins/git-sync/git-sync.yaml',
-                'modified' => 1693297499
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
                 'modified' => 1693292736
             ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1693292711
-            ],
-            'plugins/prism-highlight' => [
-                'file' => 'user/plugins/prism-highlight/prism-highlight.yaml',
-                'modified' => 1693297523
-            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1693292688
-            ],
-            'plugins/shortcode-core' => [
-                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
-                'modified' => 1693297542
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
-                'modified' => 1693297530
-            ],
-            'plugins/themer' => [
-                'file' => 'user/plugins/themer/themer.yaml',
-                'modified' => 1693296991
             ]
         ],
         'user/themes' => [
             'themes/g5_hydrogen' => [
                 'file' => 'user/themes/g5_hydrogen/g5_hydrogen.yaml',
                 'modified' => 1693297349
-            ],
-            'themes/learn2' => [
-                'file' => 'user/themes/learn2/learn2.yaml',
-                'modified' => 1693297558
-            ],
-            'themes/learn2-git-sync' => [
-                'file' => 'user/themes/learn2-git-sync/learn2-git-sync.yaml',
-                'modified' => 1693297606
-            ],
-            'themes/quark' => [
-                'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1693292685
             ]
         ]
     ],
@@ -157,61 +113,6 @@ return [
         'themes' => [
             'g5_hydrogen' => [
                 'enabled' => true
-            ],
-            'learn2' => [
-                'enabled' => true,
-                'root_page' => NULL,
-                'top_level_version' => false,
-                'show_all_pages' => false,
-                'google_analytics_code' => NULL,
-                'home_url' => NULL,
-                'github' => [
-                    'position' => 'top',
-                    'tree' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/',
-                    'commits' => 'https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/'
-                ]
-            ],
-            'learn2-git-sync' => [
-                'enabled' => true,
-                'root_page' => NULL,
-                'top_level_version' => false,
-                'google_analytics_code' => NULL,
-                'home_url' => NULL,
-                'github' => [
-                    'position' => 'top',
-                    'icon' => NULL,
-                    'tree' => NULL
-                ],
-                'default_taxonomy_category' => 'docs',
-                'style' => 'default',
-                'streams' => [
-                    'schemes' => [
-                        'theme' => [
-                            'type' => 'ReadOnlyStream',
-                            'prefixes' => [
-                                '' => [
-                                    0 => 'themes://learn2-git-sync',
-                                    1 => 'themes://learn2'
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ],
-            'quark' => [
-                'enabled' => true,
-                'production-mode' => true,
-                'grid-size' => 'grid-lg',
-                'header-fixed' => true,
-                'header-animated' => true,
-                'header-dark' => false,
-                'header-transparent' => false,
-                'sticky-footer' => true,
-                'blog-page' => '/blog',
-                'spectre' => [
-                    'exp' => false,
-                    'icons' => false
-                ]
             ]
         ],
         'plugins' => [
@@ -316,27 +217,6 @@ return [
                     ]
                 ]
             ],
-            'anchors' => [
-                'enabled' => true,
-                'active' => true,
-                'selectors' => 'h1,h2,h3,h4',
-                'placement' => 'right',
-                'visible' => 'hover',
-                'icon' => NULL,
-                'class' => NULL,
-                'truncate' => 64,
-                'copy_to_clipboard' => false
-            ],
-            'breadcrumbs' => [
-                'enabled' => true,
-                'show_all' => true,
-                'built_in_css' => true,
-                'include_home' => true,
-                'include_current' => true,
-                'icon_home' => '',
-                'icon_divider_classes' => 'fa fa-angle-right',
-                'link_trailing' => false
-            ],
             'email' => [
                 'enabled' => true,
                 'from' => NULL,
@@ -362,50 +242,6 @@ return [
                 'routes' => [
                     404 => '/error'
                 ]
-            ],
-            'external_links' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'weight' => 0,
-                'exclude' => [
-                    'classes' => [
-                        0 => 'exclude'
-                    ],
-                    'domains' => NULL
-                ],
-                'links' => [
-                    'www' => false,
-                    'redirects' => false,
-                    'schemes' => [
-                        0 => 'http',
-                        1 => 'https',
-                        2 => 'ftp',
-                        3 => 'irc',
-                        4 => 'mailto',
-                        5 => 'news',
-                        6 => 'nntp',
-                        7 => 'rtsp',
-                        8 => 'sftp',
-                        9 => 'ssh',
-                        10 => 'tel',
-                        11 => 'telnet',
-                        12 => 'webcal'
-                    ]
-                ],
-                'process' => true,
-                'title' => false,
-                'no_follow' => true,
-                'target' => '_blank',
-                'mode' => 'active'
-            ],
-            'feed' => [
-                'enabled' => true,
-                'limit' => 10,
-                'title' => 'My Feed Title',
-                'description' => 'My Feed Description',
-                'length' => 500,
-                'enable_json_feed' => false,
-                'show_last_modified' => false
             ],
             'flex-objects' => [
                 'enabled' => true,
@@ -478,6 +314,29 @@ return [
                     ]
                 ]
             ],
+            'ganalytics' => [
+                'enabled' => false,
+                'trackingId' => '',
+                'position' => 'head',
+                'objectName' => 'gtag',
+                'dnt' => true,
+                'blockedIps' => [
+                    
+                ],
+                'blockedIpRanges' => [
+                    0 => 'private',
+                    1 => 'loopback',
+                    2 => 'link-local'
+                ],
+                'blockingCookie' => 'blockGA',
+                'cookieConfig' => false,
+                'cookiePrefix' => '',
+                'cookieDomain' => '',
+                'cookieExpires' => 63072000,
+                'optOutEnabled' => false,
+                'optOutMessage' => '',
+                'debugMode' => false
+            ],
             'gantry5' => [
                 'enabled' => true,
                 'production' => false,
@@ -489,9 +348,6 @@ return [
                 'debug' => false,
                 'compile_yaml' => true,
                 'compile_twig' => true
-            ],
-            'git-sync' => [
-                'enabled' => true
             ],
             'login' => [
                 'enabled' => true,
@@ -555,94 +411,9 @@ return [
                     ]
                 ]
             ],
-            'markdown-notices' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'base_classes' => 'notices',
-                'level_classes' => [
-                    0 => 'yellow',
-                    1 => 'red',
-                    2 => 'blue',
-                    3 => 'green'
-                ]
-            ],
-            'prism-highlight' => [
-                'enabled' => true,
-                'theme' => 'prism-one-light.css',
-                'all-pre-blocks' => true,
-                'custom' => [
-                    'js_location' => 'user://data/prism-highlight/prism.js',
-                    'css_location' => 'user://data/prism-highlight/prism.css',
-                    'theme_location' => 'user://data/prism-highlight/custom-theme.css'
-                ],
-                'plugins' => [
-                    'line-numbers' => false,
-                    'command-line' => false,
-                    'command-line-prompt' => '$'
-                ]
-            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
-            ],
-            'shortcode-core' => [
-                'enabled' => true,
-                'active' => true,
-                'active_admin' => true,
-                'admin_pages_only' => true,
-                'parser' => 'regular',
-                'include_default_shortcodes' => true,
-                'css' => [
-                    'notice_enabled' => true
-                ],
-                'custom_shortcodes' => NULL,
-                'fontawesome' => [
-                    'load' => true,
-                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css',
-                    'v5' => false
-                ],
-                'nextgen-editor' => [
-                    'env' => 'production',
-                    'dev_host' => 'localhost',
-                    'dev_port' => 2001
-                ]
-            ],
-            'simplesearch' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'built_in_js' => true,
-                'display_button' => false,
-                'min_query_length' => 3,
-                'route' => '/search',
-                'search_content' => 'rendered',
-                'template' => 'simplesearch_results',
-                'filters' => [
-                    'category' => NULL
-                ],
-                'filter_combinator' => 'and',
-                'ignore_accented_characters' => false,
-                'order' => [
-                    'by' => 'date',
-                    'dir' => 'desc'
-                ],
-                'searchable_types' => [
-                    'title' => true,
-                    'content' => true,
-                    'taxonomy' => true,
-                    'header' => false
-                ],
-                'header_keys_ignored' => [
-                    0 => 'title',
-                    1 => 'taxonomy',
-                    2 => 'content',
-                    3 => 'form',
-                    4 => 'forms',
-                    5 => 'media_order'
-                ]
-            ],
-            'themer' => [
-                'enabled' => true,
-                'templates' => ''
             ]
         ],
         'backups' => [
@@ -4044,18 +3815,18 @@ node_modules'
             'salt' => '8FWta7fr30654y'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Water Prediction Node',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Adam Warnock',
+                'email' => 'akwarnock@ua.edu'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'A NOAA Coast Watch Node'
             ],
             'summary' => [
                 'enabled' => true,

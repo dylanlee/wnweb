@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1693297633,
-    'checksum' => 'c580e7aff10dcd35b99c4429aea4d386',
+    'timestamp' => 1693576709,
+    'checksum' => '47e42a91c38ad0668336d24a3f95b7c4',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -183,10 +183,6 @@ return [
             ]
         ],
         'user/plugins' => [
-            'plugins/breadcrumbs' => [
-                'file' => 'user/plugins/breadcrumbs/languages.yaml',
-                'modified' => 1693297482
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
                 'modified' => 1693292695
@@ -195,29 +191,13 @@ return [
                 'file' => 'user/plugins/error/languages.yaml',
                 'modified' => 1693292694
             ],
-            'plugins/external_links' => [
-                'file' => 'user/plugins/external_links/languages.yaml',
-                'modified' => 1693297486
-            ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
                 'modified' => 1693292707
             ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/languages.yaml',
-                'modified' => 1693292711
-            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
                 'modified' => 1693292688
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/languages.yaml',
-                'modified' => 1693297530
-            ],
-            'plugins/themer' => [
-                'file' => 'user/plugins/themer/languages.yaml',
-                'modified' => 1693296991
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -440,6 +420,20 @@ return [
                 'modified' => 1693292691
             ]
         ],
+        'user/plugins/ganalytics/languages' => [
+            'de' => [
+                'file' => 'user/plugins/ganalytics/languages/de.yaml',
+                'modified' => 1693576686
+            ],
+            'en' => [
+                'file' => 'user/plugins/ganalytics/languages/en.yaml',
+                'modified' => 1693576686
+            ],
+            'es' => [
+                'file' => 'user/plugins/ganalytics/languages/es.yaml',
+                'modified' => 1693576686
+            ]
+        ],
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
@@ -633,6 +627,52 @@ return [
                 'ENTER_PASSWORD_AGAIN' => 'Enter the password again',
                 'REGISTRATION_THANK_YOU' => 'Thank you for registering.',
                 'USER_ACCOUNT_DISABLED' => 'Your user account is disabled or it has not yet been activated.'
+            ],
+            'PLUGIN_GANALYTICS' => [
+                '_YES' => 'Ja',
+                '_NO' => 'Nein',
+                'ENABLED' => 'Aktiviert',
+                'DISABLED' => 'Deaktiviert',
+                'PLUGIN_STATUS' => 'Plugin Status',
+                'SECONDS' => 'Sekunden',
+                'SECTION_CONFIGURATION' => 'Einstellungen',
+                'SECTION_ADVANCED' => 'Erweitert',
+                'SECTION_COOKIE' => 'Cookie',
+                'SECTION_OPTOUT' => 'Ablehnen',
+                'SECTION_DEBUG' => 'Debugging',
+                'TRACKING_ID' => 'Tracking-ID',
+                'TRACKING_ID_HELP' => 'Google Analytics Tracking-ID',
+                'POSITION' => 'Code-Position',
+                'POSITION_HELP' => 'Position des Codes im HTML-Dokument (Head oder Body)',
+                'POSITION_HEAD' => 'Kopf',
+                'POSITION_BODY' => 'Inhaltsende',
+                'OBJECT_NAME' => 'Globales (gtag) Objekt',
+                'OBJECT_NAME_HELP' => 'Variablenname des globalen Google Analytics Objekts (gtag)',
+                'DNT' => 'Unterstützung für "Do Not Track"-Header',
+                'DNT_HELP' => 'Wenn diese Option aktiviert ist, wird der Google Analytics-Code nicht eingebettet, wenn ein Kunde den "Do Not Track"-Header sendet',
+                'BLOCKED_IPS' => 'Gesperrte IP-Adressen',
+                'BLOCKED_IPS_HELP' => 'Für die angegebenen IP-Adressen wird der Google Analytics Code nicht eingebunden',
+                'BLOCKED_IP_RANGES' => 'Gesperrte IP-Adressbereiche',
+                'BLOCKED_IP_RANGES_HELP' => 'Für die angegebenen IPv4- oder IPv6-Adressbereiche wird der Google Analytics Code nicht eingebunden',
+                'BLOCKED_IP_RANGES_VALUE' => 'Bereich (z.B. \'10.4.3.1-10.4.3.20\')',
+                'BLOCKING_COOKIE' => 'Sperr-Cookie',
+                'BLOCKING_COOKIE_HELP' => 'Name eines Sperr-Cookies, der - wenn gesetzt - die Einbindung von Google Analytics Code verhindert',
+                'COOKIE_CONFIG' => 'Eigene Konfiguration',
+                'COOKIE_CONFIG_HELP' => 'Soll eine eigene Cookie-Konfiguration oder die von Google Analytics genutzt werden',
+                'COOKIE_PREFIX' => 'Namenspräfix',
+                'COOKIE_PREFIX_HELP' => 'Dem Namen des Google Analytics Cookie wird ein Präfix hinzugefügt',
+                'COOKIE_DOMAIN' => 'Domain',
+                'COOKIE_DOMAIN_HELP' => 'Cookie Domain. Standardmäßig wird der Host-Name der aktuellen URL benutzt',
+                'COOKIE_EXPIRES' => 'Läuft ab',
+                'COOKIE_EXPIRES_HELP' => 'Die Ablaufzeit des Google Analytics Cookie. Standard sind zwei Jahre',
+                'DEBUG_MODE' => 'Debug-Modus',
+                'DEBUG_MODE_HELP' => 'Aktivieren Sie diese Option, um Ereignisse an DebugView in der Google Analytics-Konsole zu senden',
+                'OPTOUT_STATUS' => 'Tracking Opt-Out',
+                'OPTOUT_STATUS_HELP' => 'Besucher können das Tracking durch Google Analytics abschalten',
+                'OPTOUT_MESSAGE' => 'Bestätigung beim Opt-Out',
+                'OPTOUT_MESSAGE_HELP' => 'Angezeigte Bestätigung, wenn Tracking abgeschaltet wird',
+                'OPTOUT_HINT' => 'Damit Ihre Besucher Google Analytics Tracking abschalten können müssen Sie &quot;opt out&quot; hier aktivieren und den folgenden Link irgendwo auf Ihren Seiten einfügen:',
+                'OPTOUT_LINK' => 'Opt-Out-Link'
             ],
             'PLUGIN_FLEX_OBJECTS' => [
                 'PLUGIN_NAME' => 'Flex Objects',
@@ -1681,58 +1721,6 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'ERROR' => 'Fehler',
                 'ERROR_MESSAGE' => 'Uuups. Sieht aus als ob diese Seite nicht existiert.'
             ],
-            'PLUGINS' => [
-                'EXTERNAL_LINKS' => [
-                    'PLUGIN_NAME' => 'External Links',
-                    'PLUGIN_STATUS' => 'Plugin Status',
-                    'PLUGIN_STATUS_HELP' => 'Aktiviere das Plugin oder schalte es komplett ab.',
-                    'BUILTIN_CSS' => 'Verwende mitgeliefertes CSS',
-                    'WEIGHT' => 'Ausführungsreihenfolge',
-                    'SETTINGS' => 'Einstellungen',
-                    'CONTENT' => 'Inhalt',
-                    'EXCLUDE' => [
-                        'SECTION' => 'Ausnahmen',
-                        'SECTION_HELP' => 'Setzt Links mit bestimmten Klassen oder Links von bestimmten Domains immer als intern.',
-                        'CLASSES' => 'Ignoriere Links mit diesen Klassen',
-                        'CLASSES_HELP' => 'Komma getrennte Liste',
-                        'DOMAINS' => 'Eine Liste von auszuschließenden Domains',
-                        'DOMAINS_HELP' => 'Komma getrennte Liste von Domains z.B. _localhost/*_ (jeder regulärer Ausdruck kann verwendet werden)'
-                    ],
-                    'LINKS' => [
-                        'SECTION' => 'Links',
-                        'SECTION_HELP' => 'Sieht Links beginnend mit <code>www.</code> oder mit als extern markierten Protokollen als extern an.',
-                        'WWW' => 'Verlinkung (WWW)',
-                        'WWW_HELP' => 'Verlinke auch Links, die mit \'www.\' beginnen als extern',
-                        'REDIRECTS' => 'Folge Seiten-Weiterleitungen',
-                        'REDIRECTS_HELP' => 'Links zu Seiten, die zu einer externen URL weiterleiten werden auch als extern markiert',
-                        'SCHEMES' => 'Erlaubte Protokolle',
-                        'SCHEMES_HELP' => 'Liste von erlaubten Protokollen'
-                    ],
-                    'PROCESS' => 'Aktiviere <code>External Links</code> auf Seite',
-                    'TITLE' => 'Zeige Standardtexttitel für externe Links',
-                    'TITLE_MESSAGE' => 'Dieser Link führt auf eine externe Webseite für deren Inhalt wir nicht verantwortlich sind.',
-                    'NO_FOLLOW' => 'Fügt <code>rel="nofollow"</code> zu allen externen Links',
-                    'TARGET' => 'Setze "target" Attribut des Links.',
-                    'TARGET_BLANK' => '_blank - Öffne Link im neuen Fenster',
-                    'TARGET_SELF' => '_self - Öffne Link im gleichen Tab oder Seite',
-                    'TARGET_PARENT' => '_parent - Öffne Link im Elternfenster',
-                    'TARGET_TOP' => '_top - Öffne Link im ganzen Fenster',
-                    'MODE' => 'Modus',
-                    'MODE_HELP' => 'active = Zeichne externe Links aus; passive = Zeichne externe Links aus ohne entsprechende CSS-Klassen zu setzen',
-                    'MODE_ACTIVE' => 'Aktiv - Zeichne externe Links aus',
-                    'MODE_PASSIVE' => 'Passiv - Zeichne externe Links aus ohne entsprechende CSS-Klassen zu setzen'
-                ],
-                'THEMER' => [
-                    'GLOBAL_CONFIG' => 'Globale Einstellungen',
-                    'PLUGIN_STATUS' => 'Plugin Status',
-                    'THEMER' => 'Themer',
-                    'TEMPLATES' => 'Theme Templates',
-                    'TEMPLATES_HELP' => 'Standard-Templates im Admin Panel (frei lassen um alle verfügbaren Templates anzuzeigen)',
-                    'TEMPLATES_PLACEHOLDER' => '- Zeige alle Templates -',
-                    'THEME' => 'Theme',
-                    'THEME_HELP' => 'Wähle ein Theme für diese Seite aus'
-                ]
-            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formularwerte nicht gültig. Für ein oder mehrere erforderliche Felder fehlen Werte.',
                 'NONCE_NOT_VALIDATED' => 'Ups, es gibt da ein Problem. Eingabewerte bitte noch mal prüfen und das Formular erneut absenden.',
@@ -1782,14 +1770,6 @@ Sie haben **2FA** für dieses Konto aktiviert. Bitte benutzen Sie Ihre **2FA** A
                 'DESTINATION_NOT_SPECIFIED' => 'Zielort nicht definiert',
                 'INVALID_MIME_TYPE' => 'Der MIME-Typ %s für die Datei %s ist nicht erlaubt.',
                 'INVALID_FILE_EXTENSION' => 'Die Dateiendung %s ist nicht erlaubt.'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Suche …',
-                'SEARCH_RESULTS' => 'Suchergebnisse',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Suche: <strong>%s</strong> fand ein Ergebnis',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Suche: <strong>%s</strong> fand %s Ergebnisse',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Bitte geben Sie mindestens %s Zeichen ein',
-                'SEARCH_VALUE' => 'Suchen'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -2121,6 +2101,52 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'INVALID_INVITE_EMAILS' => '<strong>Error:</strong> An invalid list of emails was provided',
                 'INVALID_FORM' => '<strong>Error:</strong> Invalid form',
                 'FAILED_TO_SEND_EMAILS' => 'Failed to send emails to: %s'
+            ],
+            'PLUGIN_GANALYTICS' => [
+                '_YES' => 'Yes',
+                '_NO' => 'No',
+                'ENABLED' => 'Enabled',
+                'DISABLED' => 'Disabled',
+                'PLUGIN_STATUS' => 'Plugin status',
+                'SECONDS' => 'seconds',
+                'SECTION_CONFIGURATION' => 'Configuration',
+                'SECTION_ADVANCED' => 'Advanced',
+                'SECTION_COOKIE' => 'Cookie',
+                'SECTION_OPTOUT' => 'Opt-Out',
+                'SECTION_DEBUG' => 'Debug',
+                'TRACKING_ID' => 'Tracking ID',
+                'TRACKING_ID_HELP' => 'Google Analytics Tracking ID',
+                'POSITION' => 'Code Position',
+                'POSITION_HELP' => 'Code Position in the HTML document (head or body)',
+                'POSITION_HEAD' => 'Head',
+                'POSITION_BODY' => 'End of Body',
+                'OBJECT_NAME' => 'Global (gtag) Object',
+                'OBJECT_NAME_HELP' => 'Rename the global (gtag) variable of the Google Analytics object',
+                'DNT' => '"Do Not Track" header support',
+                'DNT_HELP' => 'When enabled, Google Analytics code will not be embedded if a client sends "Do Not Track" header',
+                'BLOCKED_IPS' => 'Blocked IP addresses',
+                'BLOCKED_IPS_HELP' => 'For the given IP addresses the Google Analytics code will not be embedded',
+                'BLOCKED_IP_RANGES' => 'Blocked IP address ranges',
+                'BLOCKED_IP_RANGES_HELP' => 'For the given IPv4 or IPv6 address ranges the Google Analytics code will not be embedded',
+                'BLOCKED_IP_RANGES_VALUE' => 'IP range (e.g. \'10.4.3.1-10.4.3.20\')',
+                'BLOCKING_COOKIE' => 'Blocking cookie',
+                'BLOCKING_COOKIE_HELP' => 'Name of a blocking cookie, which, when set, prevents Google Analytics code being embedded',
+                'COOKIE_CONFIG' => 'Custom Configuration',
+                'COOKIE_CONFIG_HELP' => 'Use a custom cookie configuration instead of the default one',
+                'COOKIE_PREFIX' => 'Name prefix',
+                'COOKIE_PREFIX_HELP' => 'Prefix will be added to the name of the Google Analytics cookie',
+                'COOKIE_DOMAIN' => 'Domain',
+                'COOKIE_DOMAIN_HELP' => 'The Cookie domain. Default is the hostname of the current URL',
+                'COOKIE_EXPIRES' => 'Expires',
+                'COOKIE_EXPIRES_HELP' => 'The expiration time of the Google Analytics cookie. Default is two years',
+                'DEBUG_MODE' => 'Debug Mode',
+                'DEBUG_MODE_HELP' => 'Enable to send events to DebugView in the Google Analytics console',
+                'OPTOUT_STATUS' => 'Tracking opt-out',
+                'OPTOUT_STATUS_HELP' => 'Visitor can disable tracking by Google Analytics',
+                'OPTOUT_MESSAGE' => 'Confirmation on opt-out',
+                'OPTOUT_MESSAGE_HELP' => 'Confirmation message shown to the visitor when she/he disables tracking',
+                'OPTOUT_HINT' => 'To give your users the possibility to disable Google Analytics tracking you have to enable &quot;opt-out&quot; here and put the following link somewhere in your pages:',
+                'OPTOUT_LINK' => 'Opt-out link'
             ],
             'PLUGIN_FLEX_OBJECTS' => [
                 'PLUGIN_NAME' => 'Flex Objects',
@@ -3347,16 +3373,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'LEGACY_MEDIA_MUTATION_HELP' => 'Enable this setting only if image manipulation broke after Grav update.',
                 'BACKWARD_COMPATIBILITY' => 'Backward Compatibility'
             ],
-            'PLUGIN_BREADCRUMBS' => [
-                'SHOW_WITH_ONE_ITEM' => 'Show even with one item',
-                'BUILTIN_CSS' => 'Use built in CSS',
-                'BUILTIN_CSS_HELP' => 'Include the CSS provided by the plugin',
-                'INCLUDE_HOME' => 'Include Home',
-                'INCLUDE_CURRENT_PAGE' => 'Include Current Page',
-                'ICON_HOME' => 'Icon home',
-                'ICON_DIVIDER_CLASSES' => 'Icon Divider Classes',
-                'LINK_TRAILING' => 'Link Trailing'
-            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
                 'MAIL_ENGINE_DISABLED' => 'Disabled',
@@ -3420,58 +3436,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'ERROR' => 'Error',
                 'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.',
                 'ROUTE_404' => '404 Route'
-            ],
-            'PLUGINS' => [
-                'EXTERNAL_LINKS' => [
-                    'PLUGIN_NAME' => 'External Links',
-                    'PLUGIN_STATUS' => 'Plugin status',
-                    'STATUS_HELP' => 'Set to false to disable this plugin completely.',
-                    'BUILTIN_CSS' => 'Use built in CSS',
-                    'WEIGHT' => 'Order of execution',
-                    'SETTINGS' => 'Settings',
-                    'CONTENT' => 'Content',
-                    'EXCLUDE' => [
-                        'SECTION' => 'Exclusion',
-                        'SECTION_HELP' => 'Exclude links with a specific class or domains from being recognized as external links.',
-                        'CLASSES' => 'Exclude all links with this class',
-                        'CLASSES_HELP' => 'Comma separated list.',
-                        'DOMAINS' => 'A list of domains to be excluded',
-                        'DOMAINS_HELP' => 'Comma separated list of domains e.g. _localhost/*_  (any regular expression can be used)'
-                    ],
-                    'LINKS' => [
-                        'SECTION' => 'Links',
-                        'SECTION_HELP' => 'Set links starting with <code>www.</code> and within the list of allowed schemes as external.',
-                        'WWW' => 'Link WWW',
-                        'WWW_HELP' => 'Automatically link any hostname that starts with \'www.\' as external',
-                        'REDIRECTS' => 'Follow Page redirects',
-                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
-                        'SCHEMES' => 'Allowed schemes',
-                        'SCHEMES_HELP' => 'List of allowed schemes'
-                    ],
-                    'PROCESS' => 'Filter external links on the page',
-                    'TITLE' => 'Show default title for external links',
-                    'TITLE_MESSAGE' => 'This link will take you to an external web site. We are not responsible for their content.',
-                    'NO_FOLLOW' => 'Add <code>rel="nofollow"</code> to all external links',
-                    'TARGET' => 'Set target attribute of the link.',
-                    'TARGET_BLANK' => '_blank | Load in a new window',
-                    'TARGET_SELF' => '_self | Load in the same frame as it was clicked',
-                    'TARGET_PARENT' => '_parent | Load in the parent frameset',
-                    'TARGET_TOP' => '_top | Load in the full body of the window',
-                    'MODE' => 'Mode',
-                    'MODE_HELP' => 'active = process and parse all links; passive = parse links, but don\'t set CSS classes',
-                    'MODE_ACTIVE' => 'Active - Process and parse all links',
-                    'MODE_PASSIVE' => 'Passive - Parse links, but don\'t set CSS classes'
-                ],
-                'THEMER' => [
-                    'GLOBAL_CONFIG' => 'Global plugin configurations',
-                    'PLUGIN_STATUS' => 'Plugin status',
-                    'THEMER' => 'Themer',
-                    'TEMPLATES' => 'Theme templates',
-                    'TEMPLATES_HELP' => 'Default theme page templates to show in admin panel (leave empty to show all page templates)',
-                    'TEMPLATES_PLACEHOLDER' => '- Show all page templates -',
-                    'THEME' => 'Theme',
-                    'THEME_HELP' => 'Select a theme for the page'
-                ]
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -3563,51 +3527,9 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'BASIC_CAPTCHA_MATH_OPERATORS' => 'Mathematical operators (randomized)',
                 'TURNSTILE_CAPTCHA' => 'Cloudflare Turnstile Captcha'
             ],
-            'PLUGIN_MARKDOWN_NOTICES' => [
-                'USE_BUILT_IN_CSS' => 'Use built-in CSS',
-                'BASE_CLASSES' => 'Base classes',
-                'BASE_CLASSES_HELP' => 'These classes will be added before the class level',
-                'BASE_CLASSES_PLACEHOLDER' => 'e.g. notices',
-                'LEVEL_CLASSES' => 'Level classes',
-                'LEVEL_CLASSES_HELP' => 'The classes to use for each level of notices depth',
-                'LEVEL_CLASSES_PLACEHOLDER' => 'e.g. yellow, red, blue, green'
-            ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Use built in CSS',
                 'BUILTIN_CSS_HELP' => 'Include the CSS provided by the Problems plugin'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Search …',
-                'SEARCH_RESULTS' => 'Search Results',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> found one result',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> found %s results',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Please add at least %s characters',
-                'SEARCH_CONTENT' => 'Search Content',
-                'RENDERED_CONTENT' => 'Rendered Content (Slower)',
-                'RAW_CONTENT' => 'Raw Markdown Content (Faster)',
-                'BUILTIN_CSS' => 'Use built in CSS',
-                'BUILTIN_CSS_HELP' => 'Include the CSS provided by the simplesearch plugin',
-                'BUILTIN_JS' => 'Use built in JavaScript',
-                'BUILTIN_JS_HELP' => 'Include the JavaScript provided by the simplesearch plugin',
-                'DISPLAY_SEARCH_BUTTON' => 'Display Search Button',
-                'DISPLAY_SEARCH_BUTTON_HELP' => 'Display a search button near the search field',
-                'IGNORE_ACCENDED_CHARACTERS' => 'Ignore accented characters',
-                'IGNORE_ACCENDED_CHARACTERS_HELP' => 'If enabled, search terms will match accented characters regardless to their diacritics i.e. search results will show up for "cafe" and "café" no matter how you typed it.',
-                'MIN_QUERY_LENGTH' => 'Minimum query length',
-                'MIN_QUERY_LENGTH_HELP' => 'The minimum number of characters needed before search can be submitted',
-                'SEARCH_PAGE_ROUTE' => 'Route',
-                'SEARCH_PAGE_ROUTE_HELP' => 'Default route of the simplesearch plugin',
-                'SEARCH_PAGE_TEMPLATE' => 'Template',
-                'SEARCH_PAGE_TEMPLATE_HELP' => 'Name of the template for the search results',
-                'CATEGORY_FILTER' => 'Category filter',
-                'CATEGORY_FILTER_HELP' => 'Comma separated list of category names. Enter "@none" to search in all pages.',
-                'FILTER_COMBINATOR' => 'Filter Combinator',
-                'AND_COMBINATOR' => 'And - Boolean &&',
-                'OR_COMBINATOR' => 'Or - Boolean ||',
-                'SEARCHABLE_TYPES' => 'Searchable Types',
-                'SEARCHABLE_TYPES_DESCRIPTION' => '<b>Title</b> = Search Page Title<br><b>Content</b> = Search Page Content<br><b>Header</b> = Search Raw Page Headers<br><b>Taxonomy</b> = Search Taxonomy',
-                'HEADER_KEYS_IGNORED' => 'Header Keys to Ignore',
-                'HEADER_KEYS_IGNORED_HELP' => 'The root-level header keys that should be skipped when searching type "Header"'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -3904,6 +3826,47 @@ Path: `%2$s`
                 'ENTER_PASSWORD_AGAIN' => 'Enter the password again',
                 'REGISTRATION_THANK_YOU' => 'Thank you for registering.',
                 'USER_ACCOUNT_DISABLED' => 'Your user account is disabled or it has not yet been activated.'
+            ],
+            'PLUGIN_GANALYTICS' => [
+                '_YES' => 'Sí',
+                '_NO' => 'No',
+                'ENABLED' => 'Activo',
+                'DISABLED' => 'Inactivo',
+                'PLUGIN_STATUS' => 'Estado del Complemento',
+                'SECONDS' => 'segundos',
+                'SECTION_CONFIGURATION' => 'Configuración',
+                'SECTION_ADVANCED' => 'Avanzada',
+                'SECTION_COOKIE' => 'Cookie',
+                'SECTION_OPTOUT' => 'Optar por no',
+                'SECTION_DEBUG' => 'Depuración',
+                'TRACKING_ID' => 'ID Seguimiento',
+                'TRACKING_ID_HELP' => 'ID Seguimiento estadísticas Google',
+                'POSITION' => 'Posición del Código',
+                'POSITION_HELP' => 'Posición del código en el documento HTML (cabecera o cuerpo)',
+                'POSITION_HEAD' => 'Cabecera',
+                'POSITION_BODY' => 'Final del cuerpo',
+                'OBJECT_NAME' => 'Objeto (gtag) global',
+                'OBJECT_NAME_HELP' => 'Renombrar el objeto (gtag) global de las estadísticas Google',
+                'DNT' => 'Compatibilidad con el encabezado "Do Not Track"',
+                'DNT_HELP' => 'Cuando está habilitado, el código de Google Analytics no se incrustará si un cliente envía el encabezado "Do Not Track"',
+                'BLOCKED_IPS' => 'Direcciones IP bloquedas',
+                'BLOCKED_IPS_HELP' => 'Para estas direcciones IP no se cargará el seguimiento de las estadísticas Google',
+                'COOKIE_CONFIG' => 'Configuración Personalizada',
+                'COOKIE_CONFIG_HELP' => 'Utilizar un cookie personalizado en vez del por defecto',
+                'COOKIE_PREFIX' => 'Prefijo del nombre',
+                'COOKIE_PREFIX_HELP' => 'Se añadirá un prefijo al nombre de la cookie de Google Analytics',
+                'COOKIE_DOMAIN' => 'Dominio',
+                'COOKIE_DOMAIN_HELP' => 'El dominio del cookie. Por defecto se utilizará el hostname de la URL actual',
+                'COOKIE_EXPIRES' => 'Caduca',
+                'COOKIE_EXPIRES_HELP' => 'El tiempo de caducidad del cookie para las estadísticas Google. Por defecto es dos años',
+                'DEBUG_MODE' => 'Modo depuración',
+                'DEBUG_MODE_HELP' => 'Habilite para enviar eventos a DebugView en la consola de Google Analytics',
+                'OPTOUT_STATUS' => 'Optar por no',
+                'OPTOUT_STATUS_HELP' => 'Los visitantes pueden desactivar el seguimiento de Google Analytics',
+                'OPTOUT_MESSAGE' => 'Confirmación en optar por no',
+                'OPTOUT_MESSAGE_HELP' => 'Confirmación mostrada cuando el seguimiento está desactivado',
+                'OPTOUT_HINT' => 'Para que sus visitantes puedan desactivar el seguimiento de Google Analytics, active &quot;opt out&quot; aquí e inserte el siguiente enlace en algún lugar de sus páginas:',
+                'OPTOUT_LINK' => 'Enlace de exclusión voluntaria'
             ],
             'PLUGIN_FLEX_OBJECTS' => [
                 'PLUGIN_NAME' => 'Flex Objects',
@@ -5025,12 +4988,6 @@ Tienes **2FA** habilitado en esta cuenta. Por favor usa tu aplicación **2FA** p
                 'INLINE_ERRORS_HELP' => 'Útil con \'validación del lado del cliente\' desactivado, muestra errores en el formulario contextual en línea',
                 'RESOLUTION_MIN' => '{{attr}} fué menor que el mínimo {{min}}px <br />',
                 'RESOLUTION_MAX' => '{{attr}} fué mayor que el máximo {{max}}px <br />'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Buscar …',
-                'SEARCH_RESULTS' => 'Resultados de la búsqueda',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Consulta: <strong>%s</strong> se encontró 1 resultado',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Consulta: <strong>%s</strong> se encontraron %s resultados'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -6434,52 +6391,6 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'ERROR' => 'Erreur',
                 'ERROR_MESSAGE' => 'Oups. Il semble que cette page n’existe pas.'
             ],
-            'PLUGINS' => [
-                'EXTERNAL_LINKS' => [
-                    'PLUGIN_NAME' => 'Liens externes',
-                    'PLUGIN_STATUS' => 'Statut du plugin',
-                    'STATUS_HELP' => 'Régler sur false pour désactiver complètement le plugin.',
-                    'BUILTIN_CSS' => 'Utiliser les CSS intégrés',
-                    'WEIGHT' => 'Ordre d’exécution',
-                    'SETTINGS' => 'Configuration',
-                    'CONTENT' => 'Contenu',
-                    'EXCLUDE' => [
-                        'SECTION' => 'Exclusion',
-                        'SECTION_HELP' => 'Exclure les liens avec des classes spécifiques ou des domaines comme étant reconnus comme liens externes.',
-                        'CLASSES' => 'Exclure tous les liens avec cette classe',
-                        'CLASSES_HELP' => 'Liste des classes séparées par des virgules.',
-                        'DOMAINS' => 'Une liste des domaines à exclure',
-                        'DOMAINS_HELP' => 'Liste des domaines séparés par des virgules ex : _localhost/*_  (les expressions régulières peuvent être utilisées)'
-                    ],
-                    'LINKS' => [
-                        'SECTION' => 'Liens',
-                        'SECTION_HELP' => 'Définir les liens commençant par <code>www.</code> et ceux de la liste des schémas définis comme étant des liens externes.',
-                        'WWW' => 'Liens WWW',
-                        'WWW_HELP' => 'Reconnaître automatiquement tout lien commencant par \'www.\' comme étant un lien externe.',
-                        'REDIRECTS' => 'Follow Page redirects',
-                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
-                        'SCHEMES' => 'Schémas autorisés',
-                        'SCHEMES_HELP' => 'Liste des schémas autorisés'
-                    ],
-                    'PROCESS' => 'Filtrer les liens externes de la page',
-                    'TITLE' => 'Afficher le titre par défaut pour les liens externes',
-                    'TITLE_MESSAGE' => 'Ce lien va vous diriger vers un site externe. Nous ne sommes pas responsables de son contenu.',
-                    'NO_FOLLOW' => 'Ajouter <code>rel="nofollow"</code> à tous les liens externes',
-                    'TARGET' => 'Spécifier la cible dans laquelle le contenu du lien doit s\'afficher.',
-                    'TARGET_BLANK' => '_blank | Afficher dans une nouvelle fenêtre',
-                    'TARGET_SELF' => '_self | Afficher dans la même fenêtre',
-                    'TARGET_PARENT' => '_parent | Afficher dans le cadre parent (frame)',
-                    'TARGET_TOP' => '_top | Afficher dans le cadre racine',
-                    'MODE' => 'Mode',
-                    'MODE_HELP' => 'actif = analyser et procéder pour tous les liens; passif = analyser les liens mais ne pas appliquer les classes CSS',
-                    'MODE_ACTIVE' => 'Actif - Analyser et procéder pour tous les liens',
-                    'MODE_PASSIVE' => 'Passif - Analyser les liens mais ne pas appliquer les classes CSS'
-                ],
-                'THEMER' => [
-                    'GLOBAL_CONFIG' => 'Configurations générales du plugin',
-                    'PLUGIN_STATUS' => 'Statut du plugin'
-                ]
-            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formulaire non validé. Un ou plusieurs champs obligatoires sont manquants.',
                 'NONCE_NOT_VALIDATED' => 'Oups, un problème est survenu. Veuillez vérifier votre saisie et soumettre à nouveau le formulaire.',
@@ -6536,13 +6447,6 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'DESTINATION_NOT_SPECIFIED' => 'La destination n’est pas indiquée.',
                 'INVALID_MIME_TYPE' => 'Le type MIME %s pour le fichier %s n’est pas accepté.',
                 'INVALID_FILE_EXTENSION' => 'L’extension pour le fichier %s n’est pas acceptée.'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Recherche …',
-                'SEARCH_RESULTS' => 'Résultats de la recherche',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Recherche : Un résultat trouvé pour <strong>%s</strong>',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Recherche : %2$s résultats trouvés pour <strong>%1$s</strong>',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Veuillez ajouter au moins %s caractères'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -7369,12 +7273,6 @@ Chemin: `%2$s`
                 'ACCEPT' => 'Dopušteni MIME Tipovi',
                 'ACCEPT_HELP' => 'Lista dopuštenih MIME Tipova koji su dozvoljeni za upload',
                 'ERROR_VALIDATING_CAPTCHA' => 'Greška pri validiranju Captcha'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Traži …',
-                'SEARCH_RESULTS' => 'Rezultati pretrage',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Upit: <strong>%s</strong> je pronašao jedan rezultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Upit: <strong>%s</strong> je pronašao %s rezultata'
             ],
             'GRAV' => [
                 'INFLECTOR_UNCOUNTABLE' => [
@@ -11417,12 +11315,6 @@ Aveți **2FA** activată pentru acest cont. Vă rugăm folosiți aplicația pent
                 'RECAPTCHA_SECRET_KEY' => 'Cheia secretă pentru Site',
                 'RECAPTCHA_SECRET_KEY_HELP' => 'Pentru mai multe detalii vă rugăm vizitați  https://developers.google.com/recaptcha'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Caută …',
-                'SEARCH_RESULTS' => 'Rezultatele căutării',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Căutarea: <strong>%s</strong> a găsit un rezultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Căutarea: <strong>%s</strong> a găsit %s rezultate'
-            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 Titlu: %1$s
@@ -12797,16 +12689,6 @@ Calea: `%2$s`
                 'PLUGINS_MUST_BE_ENABLED' => 'Плагин должен быть включен для настройки',
                 'ACTIVATION_REQUIRED' => 'Для настройки требуется активация'
             ],
-            'PLUGIN_BREADCRUMBS' => [
-                'SHOW_WITH_ONE_ITEM' => 'Показывать даже с одним элементом',
-                'BUILTIN_CSS' => 'Использовать встроенный CSS',
-                'BUILTIN_CSS_HELP' => 'Включить CSS, предоставляемый плагином',
-                'INCLUDE_HOME' => 'Включить главную страницу',
-                'INCLUDE_CURRENT_PAGE' => 'Включать текущую страницу',
-                'ICON_HOME' => 'Иконка главной страницы',
-                'ICON_DIVIDER_CLASSES' => 'Класс иконки разделителя',
-                'LINK_TRAILING' => 'Трейлинг ссылки'
-            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Почтовая система',
                 'MAIL_ENGINE_DISABLED' => 'Отключена',
@@ -12867,48 +12749,6 @@ Calea: `%2$s`
                 'ERROR' => 'Ошибка',
                 'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.',
                 'ROUTE_404' => 'Маршрут 404'
-            ],
-            'PLUGINS' => [
-                'EXTERNAL_LINKS' => [
-                    'PLUGIN_NAME' => 'Внешние ссылки',
-                    'PLUGIN_STATUS' => 'Статус плагина',
-                    'STATUS_HELP' => 'Установите нет, чтобы отключить этот плагин полностью.',
-                    'BUILTIN_CSS' => 'Использовать встроенные CSS',
-                    'WEIGHT' => 'Порядок выполнения',
-                    'SETTINGS' => 'Настройки',
-                    'CONTENT' => 'Контент',
-                    'EXCLUDE' => [
-                        'SECTION' => 'Исключения',
-                        'SECTION_HELP' => 'Исключить ссылки с определенным классом или домены, которые не признаются в качестве внешних ссылок.',
-                        'CLASSES' => 'Исключить все ссылки с этим классом',
-                        'CLASSES_HELP' => 'Список разделенных запятыми.',
-                        'DOMAINS' => 'Список доменов, которые будут исключены',
-                        'DOMAINS_HELP' => 'Разделенный запятыми список доменов, например, _localhost / * _ (любое регулярное выражение может быть использовано)'
-                    ],
-                    'LINKS' => [
-                        'SECTION' => 'Ссылки',
-                        'SECTION_HELP' => 'Установить ссылки, начинающиеся с <code>www.</code>? и список разрешенных схем, как внешние.',
-                        'WWW' => 'Ссылка WWW',
-                        'WWW_HELP' => 'Автоматически связывать любое имя хоста, которое начинается с \'www\'. как внешние',
-                        'REDIRECTS' => 'Follow Page redirects',
-                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
-                        'SCHEMES' => 'Допустимые схемы',
-                        'SCHEMES_HELP' => 'Список допустимых схем'
-                    ],
-                    'PROCESS' => 'Фильтр внешних ссылок на странице',
-                    'TITLE' => 'Показать название по умолчанию для внешних ссылок',
-                    'TITLE_MESSAGE' => 'Эта ссылка приведет вас на внешний веб-сайт. Мы не несем ответственности за его содержание.',
-                    'NO_FOLLOW' => 'Добавить <code>rel="nofollow"</code> ко всем внешним ссылкам',
-                    'TARGET' => 'Установить целевой атрибут ссылки.',
-                    'TARGET_BLANK' => '_blank | Загрузка в новом окне',
-                    'TARGET_SELF' => '_self | Загрузка в том же фрейме где и был сделан клик',
-                    'TARGET_PARENT' => '_parent | Загрузка в родительском наборе фреймов',
-                    'TARGET_TOP' => '_top | Загрузка в отдельном окне браузера',
-                    'MODE' => 'Режим',
-                    'MODE_HELP' => 'активный = обработка и разбор всех ссылок; пассивный = вставлять ссылки, но не устанавливать для них CSS',
-                    'MODE_ACTIVE' => 'Активный = обработка и разбор всех ссылок',
-                    'MODE_PASSIVE' => 'Пассивный = вставлять ссылки, но не устанавливать для них CSS'
-                ]
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Форма не подтверждена. Отсутствует одно или несколько обязательных полей.',
@@ -12975,47 +12815,9 @@ Calea: `%2$s`
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не принимается.',
                 'INVALID_FILE_EXTENSION' => 'Расширение файла %s не является допустимым для файла.'
             ],
-            'PLUGIN_MARKDOWN_NOTICES' => [
-                'USE_BUILT_IN_CSS' => 'Использовать встроенный CSS',
-                'BASE_CLASSES' => 'Базовые классы',
-                'BASE_CLASSES_HELP' => 'Эти классы будут добавлены до уровня класса',
-                'BASE_CLASSES_PLACEHOLDER' => 'например notices',
-                'LEVEL_CLASSES' => 'Классы уровней',
-                'LEVEL_CLASSES_HELP' => 'Эти классы используются на каждом уровне глубины уведомлений',
-                'LEVEL_CLASSES_PLACEHOLDER' => 'например yellow, red, blue, green'
-            ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Использовать встроенный CSS',
                 'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином Problems'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Найти …',
-                'SEARCH_RESULTS' => 'Результат поиска',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'По запросу: <strong>%s</strong> найден 1 результат',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'По запросу: <strong>%s</strong> результатов найдено %s',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Добавьте не менее %s символов',
-                'SEARCH_CONTENT' => 'Поиск контента',
-                'RENDERED_CONTENT' => 'Обработанный контент (медленнее)',
-                'RAW_CONTENT' => 'Необработанный Markdown контент (быстрее)',
-                'BUILTIN_CSS' => 'Использовать встроенный CSS',
-                'BUILTIN_CSS_HELP' => 'Использовать CSS, предоставленный плагином simplesearch',
-                'BUILTIN_JS' => 'Использовать встроенный JavaScript',
-                'BUILTIN_JS_HELP' => 'Использовать JavaScript, предоставленный плагином simplesearch',
-                'DISPLAY_SEARCH_BUTTON' => 'Показать кнопку поиска',
-                'DISPLAY_SEARCH_BUTTON_HELP' => 'Показать кнопку поиска рядом с полем поиска',
-                'IGNORE_ACCENDED_CHARACTERS' => 'Игнорировать акцентированные символы',
-                'IGNORE_ACCENDED_CHARACTERS_HELP' => 'Если этот параметр включен, поисковые термины будут совпадать с акцентированными символами, независимо от их диакритических знаков, т.е. результаты поиска будут отображаться как "кафе" и "кафе́", независимо от того, как вы их набрали',
-                'MIN_QUERY_LENGTH' => 'Минимальная длина запроса',
-                'MIN_QUERY_LENGTH_HELP' => 'Минимальное количество символов, необходимое для отправки запроса',
-                'SEARCH_PAGE_ROUTE' => 'Маршрут',
-                'SEARCH_PAGE_ROUTE_HELP' => 'Маршрут по умолчанию для плагина simplesearch',
-                'SEARCH_PAGE_TEMPLATE' => 'Шаблон',
-                'SEARCH_PAGE_TEMPLATE_HELP' => 'Имя шаблона для страницы результатов поиска',
-                'CATEGORY_FILTER' => 'Фильтр категорий',
-                'CATEGORY_FILTER_HELP' => 'Разделенный запятыми список названий категорий. Введите "@none" для поиска на всех страницах',
-                'FILTER_COMBINATOR' => 'Фильтр комбинатор',
-                'AND_COMBINATOR' => 'И - Булева &&',
-                'OR_COMBINATOR' => 'Или - Булева ||'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -13887,16 +13689,6 @@ title: %1$s
                 'IMAGES_CLS_RETINA_SCALE' => 'Коефіцієнт масштабування сітківки',
                 'IMAGES_CLS_RETINA_SCALE_HELP' => 'Візьме обчислений розмір і поділить на  коефіцієнт маштабування для показу зображення з більшою роздільною здатністю при меншому розмірі пікселів, для кращої обробки роздільної здатності HiDPI'
             ],
-            'PLUGIN_BREADCRUMBS' => [
-                'SHOW_WITH_ONE_ITEM' => 'Показувати навіть з одним елементом',
-                'BUILTIN_CSS' => 'Використовувати вбудований CSS',
-                'BUILTIN_CSS_HELP' => 'Включити CSS, що надається плагіном',
-                'INCLUDE_HOME' => 'Включити головну сторінку',
-                'INCLUDE_CURRENT_PAGE' => 'Включати активну сторінку',
-                'ICON_HOME' => 'Іконка головної сторінки',
-                'ICON_DIVIDER_CLASSES' => 'Клас іконки розділювача',
-                'LINK_TRAILING' => 'Трейлінг посилання'
-            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Електронна пошта не налаштована',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Будь ласка налаштуйте адресу одержувача (\'to\') в налаштуваннях плагіна Email Plugin, або на формі',
@@ -13968,47 +13760,9 @@ title: %1$s
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не приймається.',
                 'INVALID_FILE_EXTENSION' => 'Розширення файлу %s не є допустимим для файлу.'
             ],
-            'PLUGIN_MARKDOWN_NOTICES' => [
-                'USE_BUILT_IN_CSS' => 'Використовувати вбудований CSS',
-                'BASE_CLASSES' => 'Базові класи',
-                'BASE_CLASSES_HELP' => 'Ці класи будуть додані до рівня класу',
-                'BASE_CLASSES_PLACEHOLDER' => 'наприклад notices',
-                'LEVEL_CLASSES' => 'Класи рівнів',
-                'LEVEL_CLASSES_HELP' => 'Ці класи використовуються на кожному рівні глибини повідомлень',
-                'LEVEL_CLASSES_PLACEHOLDER' => 'наприклад yellow, red, blue, green'
-            ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Використовувати вбудований CSS',
                 'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном Problems'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Знайти …',
-                'SEARCH_RESULTS' => 'Результат пошуку',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'На запит: <strong>%s</strong> знайдено 1 результат',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'На запит: <strong>%s</strong> результатів знайдено %s',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Введіть не менше %s символів',
-                'SEARCH_CONTENT' => 'Пошук контенту',
-                'RENDERED_CONTENT' => 'Оброблений контент (повільніше)',
-                'RAW_CONTENT' => 'Необроблений Markdown контент (швидше)',
-                'BUILTIN_CSS' => 'Використовувати вбудований CSS',
-                'BUILTIN_CSS_HELP' => 'Використовувати CSS, наданий плагіном simplesearch',
-                'BUILTIN_JS' => 'Використовувати вбудований JavaScript',
-                'BUILTIN_JS_HELP' => 'Використовувати JavaScript, наданий плагіном simplesearch',
-                'DISPLAY_SEARCH_BUTTON' => 'Показати кнопку пошуку',
-                'DISPLAY_SEARCH_BUTTON_HELP' => 'Показати кнопку пошуку поряд з полем пошуку',
-                'IGNORE_ACCENDED_CHARACTERS' => 'Ігнорувати акцентовані символи',
-                'IGNORE_ACCENDED_CHARACTERS_HELP' => 'Якщо цей параметр включений, пошукові терміни будуть збігатися з акцентованими символами, незалежно від їх діакритичних знаків, тобто результати пошуку будуть відображатися як "кафе" і "кафе́", незалежно від того, як ви їх набрали',
-                'MIN_QUERY_LENGTH' => 'Мінімальна довжина запиту',
-                'MIN_QUERY_LENGTH_HELP' => 'Мінімальна кількість символів, необхідна для відправлення запиту',
-                'SEARCH_PAGE_ROUTE' => 'Маршрут',
-                'SEARCH_PAGE_ROUTE_HELP' => 'Маршрут за замовчуванням для плагіна simplesearch',
-                'SEARCH_PAGE_TEMPLATE' => 'Шаблон',
-                'SEARCH_PAGE_TEMPLATE_HELP' => 'Ім\'я шаблону для сторінки результатів пошуку',
-                'CATEGORY_FILTER' => 'Фільтр категорій',
-                'CATEGORY_FILTER_HELP' => 'Розділений комами список назв категорій. Введіть "@none" для пошуку на всіх сторінках',
-                'FILTER_COMBINATOR' => 'Фільтр комбінатор',
-                'AND_COMBINATOR' => 'І - Булева &&',
-                'OR_COMBINATOR' => 'Або - Булева ||'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -15343,12 +15097,6 @@ Path: `%2$s`
                 'ERROR' => '错误',
                 'ERROR_MESSAGE' => '呃，似乎这个页面不存在。'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => '搜索 …',
-                'SEARCH_RESULTS' => '搜索结果',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '查询: <strong>%s</strong> 找到 1 个结果',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => '查询: <strong>%s</strong> 找到 %s 个结果'
-            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 标题: %1$s
@@ -16348,12 +16096,6 @@ Path: `%2$s`
                 'DASHBOARD' => 'ダッシュボード',
                 'NOTIFICATIONS' => '通知',
                 'ACCESS_ADMIN_CONFIGURATION_SECURITY' => 'セキュリティ設定の管理'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => '検索する …',
-                'SEARCH_RESULTS' => '検索結果',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '検索 : <strong>%s</strong> に一つの結果があります。',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => '検索 : <strong>%s</strong> に %s の結果があります。'
             ],
             'GRAV' => [
                 'INFLECTOR_UNCOUNTABLE' => [
@@ -17417,13 +17159,6 @@ Je hebt **2FA** aanstaan op dit account. Gebruik je **2FA** App om de huidige **
                 'AVOID_OVERWRITING_HELP' => 'Voorkom dat bestanden met dezelfde naam worden overschreven. Datum prefix wordt toegevoegd',
                 'RANDOM_NAME' => 'Willekeurige naam',
                 'RANDOM_NAME_HELP' => 'Genereer een willekeurige naam van 15 karakters voor de geuploade bestanden'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Zoeken …',
-                'SEARCH_RESULTS' => 'Zoek resultaten',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> is 1 keer gevonden',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> is %s keer gevonden',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Geef minstens %s tekens in'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -20946,12 +20681,6 @@ Máte na svém účtu aktivováno **dvoufaktorové ověřování**. Pro dokonče
                 1 => 'Ano',
                 '' => 'Ne'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Vyhledat …',
-                'SEARCH_RESULTS' => 'Výsledky hledání',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Hledání výrazu \'<strong>%s</strong>\' našlo jeden výsledek',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Hledání výrazu \'<strong>%s</strong>\' našlo %s výsledků'
-            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -22040,12 +21769,6 @@ Du har **2FA** aktiveret for denne konto. Benyt venligst din **2FA**-app til at 
                 'DESTINATION_NOT_SPECIFIED' => 'Destination ikke angivet',
                 'INVALID_MIME_TYPE' => 'MIME typen %s for filen %s er ikke accepteret.',
                 'INVALID_FILE_EXTENSION' => 'Filendelsen for filen %s er ikke accepteret.'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Søg …',
-                'SEARCH_RESULTS' => 'Søgeresultat',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Søgning: <strong>%s</strong> fandt et resultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Søgning: <strong>%s</strong> fandt %s resultater'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -26034,12 +25757,6 @@ asukoht: `%2$s`
                 'DASHBOARD' => 'پیشخوان',
                 'NOTIFICATIONS' => 'اطلاعیه‌ها'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'جستجو …',
-                'SEARCH_RESULTS' => 'نتایج جستجو',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'جستار: <strong>%s</strong> یک نتیجه یافت شد',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'جستار: <strong>%s</strong> %s نتیجه یافت شد'
-            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 عنوان: %1$s
@@ -27405,12 +27122,6 @@ Filtrar os vínculos Moz',
                 'NOTIFICATIONS' => 'Notificacións',
                 'PAGEMEDIA_RESIZER' => '> A seguinte configuración aplícase ás imaxes cargadas a través da páxina de medios. Redimensionar largo / alto reducirá automaticamente proporcionalmente unha imaxe a nivel máis baixo se excede os límites definidos na configuración. Os valores de resolución mínima e máxima define os límites das imaxes cargadas. Defínase os campos como 0 para evitar calquera manipulación.',
                 'IMAGES_CLS_AUTO_SIZES' => 'Habilitar Tamaños Automáticos'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Procurar …',
-                'SEARCH_RESULTS' => 'Resultados da procura',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Consulta: <strong>%s</strong> atopouse 1 resultado',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Consulta: <strong>%s</strong> atopáronse %s resultados'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -30110,13 +29821,6 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 1 => 'Si',
                 '' => 'No'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Cerca …',
-                'SEARCH_RESULTS' => 'Risultati della ricerca',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Ricerca: <strong>%s</strong>. Trovato un risultato',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Ricerca: <strong>%s</strong>. Trovati %s risultati',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Inserisci almeno %s caratteri'
-            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',
                 'INFLECTOR_PLURALS' => [
@@ -32737,13 +32441,6 @@ Masz na tym koncie włączone **2FA**. Użyj aplikacji od **2FA** i wprowadź ak
                 'INVALID_MIME_TYPE' => 'Typ MIME %s dla pliku %s nie jest dozwolony.',
                 'INVALID_FILE_EXTENSION' => 'Rozszerzenie pliku %s nie jest dozwolone.'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Szukaj…',
-                'SEARCH_RESULTS' => 'Wyniki wyszukiwania',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Znaleziono jeden wynik dla frazy <strong>%s</strong>.',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Znaleziono %2$s wyników dla frazy <strong>%1$s</strong>.',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Fraza musi składać się z minimum %s znaków.'
-            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -33541,12 +33238,6 @@ Path: `%2$s`
                 'INLINE_ERRORS_HELP' => 'Útil se a validação no cliente estiver desabilitada. Mostra os erros próximo aos respectivos campos',
                 'RESOLUTION_MIN' => 'A {{attr}} é menor que o mínimo de {{min}}px <br />',
                 'RESOLUTION_MAX' => 'A {{attr}} é maior que o máximo de {{max}}px <br />'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'O que você procura?',
-                'SEARCH_RESULTS' => 'Resultados da pesquisa',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Pesquisa: <strong>%s</strong>. Foram encontrados 1 resultados',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Pesquisa: <strong>%s</strong>. Foram encontrados %s resultados'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -36510,12 +36201,6 @@ Path: `%2$s`
                 'TIMEOUT_HELP' => 'Anger sessionstimeout i sekunder',
                 'DASHBOARD' => 'Översiktspanel',
                 'NOTIFICATIONS' => 'Notiser'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Sök …',
-                'SEARCH_RESULTS' => 'Sökresultat',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Sökning: <strong>%s</strong> hittade ett resultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Sökning: <strong>%s</strong> hittade %s resultat'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '--- titel: %1$s --- # Fel: Ogiltig Frontmatter-sökväg: `%2$s` **%3$s** ``` %4$s ```',
@@ -41011,24 +40696,6 @@ title: %1$s
                     'TEXT_MONTH' => ' 的 <b />',
                     'TEXT_DOM' => ' 的 <b />'
                 ]
-            ]
-        ],
-        'zh-TW' => [
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => '搜尋 …',
-                'SEARCH_RESULTS' => '搜尋結果',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '查詢: <strong>%s</strong> 找到 1 個結果',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => '查詢: <strong>%s</strong> 找到 %s 個結果',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => '請輸入至少 %s 個字元'
-            ]
-        ],
-        'kk' => [
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'іздеу …',
-                'SEARCH_RESULTS' => 'Іздеу нәтижесі',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Сұраныс бойынша: <strong>%s</strong> табылды 1',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Сұраныс бойынша: <strong>%s</strong> табылды %s',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Кемінде %s таңба қосу'
             ]
         ],
         'is' => [
