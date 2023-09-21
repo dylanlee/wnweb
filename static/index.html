@@ -7,13 +7,10 @@
     <title>Water Node</title>
     <link rel="canonical" href="https://waternode.ciroh.org/">
     <link rel="stylesheet" href="./css/site.css">
-    <script src="./js/htmx.js"></script>
-    <script src="./js/class-tools.js"></script>
-    <script src="./js/preload.js"></script>
     <script src="./js/_hyperscript.js"></script>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
-<body hx-ext="class-tools, preload">
+<body>
 <div class="content-wrapper"> 
 
 <div class="top-nav">
@@ -37,13 +34,13 @@
 		</svg>
              </div>
 
-            <div id="nav" class="navigation" hx-boost="true">
-	        <div class="navigation-items" preload="mouseover">
-                    <div><a href="https://waternode.ciroh.org:446/?.language=en">data catalog</a></div>
+            <div id="nav" class="navigation">
+	        <div class="navigation-items">
+                    <div><a href="./catalog/">data catalog</a></div>
                     <div><a href="./projects.html">projects</a></div>
                     <div><a href="./learn.html">learn</a></div>
                     <div><a href="./about.html">about</a></div>
-                    <div hx-disable>
+                    <div>
                         <form action="https://google.com/search">
                             <input type="hidden" name="q" value="site:waternode.ciroh.org">
                             <label>
@@ -59,12 +56,9 @@
 </div>
 
 
-    
-
-
 <div class="c content ">
     
-    <div class="dark-hero full-width" classes="add appear">
+    <div class="dark-hero full-width"> 
 	<div class="banner-wrapper">
 	  <div class="logo">Water Prediction Node</div>
   	   <div class="description no-mobile">Delivering Remote Sensing Data for US Inland Waters</div>
@@ -72,7 +66,7 @@
     </div>
 
     <h3></h3>
-    <p style="font-size: 18px;">Welcome to the Water Prediction Node! We are a service dedicated to providing timely remote sensing information relevant to US river, lakes, and coastlines. You can access water related geospatial data using our <a href= "https://waternode.ciroh.org:446/?.language=en">data catalog</a>. The catalog contains details about the all the collections availble for download. If you would like to learn more about how to work with this data try one of our [[tutorials]]. The Water Node is also actively involved in several [[projects]] revolving around enabling the use of remote sensing data in Water Center operations and hydrological modelling. The <a href="./about.html">about</a> page has more information about our mission and the people involved or to find out how to contact us to learn more. </p>
+    <p style="font-size: 18px;">Welcome to the Water Prediction Node! We are a service dedicated to providing timely remote sensing information relevant to US river, lakes, and coastlines. You can access water related geospatial data using our <a href="./catalog/">data catalog</a>. The catalog contains details about the all the collections availble for download. If you would like to learn more about how to work with this data try one of our [[tutorials]]. The Water Node is also actively involved in several [[projects]] revolving around enabling the use of remote sensing data in Water Center operations and hydrological modelling. The <a href="./about.html">about</a> page has more information about our mission and the people involved or to find out how to contact us to learn more. </p>
 
 </div>
 
