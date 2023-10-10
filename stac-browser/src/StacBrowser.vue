@@ -5,27 +5,37 @@
     <Sidebar v-if="sidebar" />
     <!-- Header -->
     <header>
-    <div class="logo-spacer">
-      <a href="https://waternode.ciroh.org">
-        <div class="logo-inner">
-            <img src="../img/noaa-logo.png" alt="Image 1" class="logo-image">
-            <div class="logo-text">
-          <span class="main-text">Water Prediction Node</span>
-          <span class="sub-text">noaa coastwatch</span>
-            </div>
-            <img src="../img/ciroh-logo.png" alt="Image 2" class="logo-image">
-          </div>
-      </a>
-          <div class="navigation">
-	              <div class="navigation-items">
-                    <div><a href="./catalog/">data catalog</a></div>
-                    <div><a href="/projects.html">projects</a></div>
-                    <div><a href="/learn.html">learn</a></div>
-                    <div><a href="/about.html">about</a></div>
+      <div class="top-nav">
+        <div class="logo-spacer">
+          <a href="https://waternode.ciroh.org">
+            <div class="logo-inner">
+                <img src="../img/noaa-logo.png" alt="Image 1" class="logo-image">
+                <div class="logo-text">
+              <span class="main-text">Water Prediction Node</span>
+              <span class="sub-text">noaa coastwatch</span>
                 </div>
-           </div>
-    </div>
-
+                <img src="../img/ciroh-logo.png" alt="Image 2" class="logo-image">
+              </div>
+          </a>
+              <div class="navigation">
+                    <div class="navigation-items">
+                        <div><a href="./">data catalog</a></div>
+                        <div><a href="/projects.html">projects</a></div>
+                        <div><a href="/learn.html">learn</a></div>
+                        <div><a href="/about.html">about</a></div>
+                        <div>
+                            <form action="https://google.com/search">
+                                <input  type="hidden" name="q" value="site:waternode.ciroh.org">
+                                <label>
+                                    <span style="display:none;">Search</span>
+                                    <input type="text" name="q" placeholder="🔍️" class="search-box">
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+               </div>
+        </div>
+      </div> 
       <StacHeader @enableSidebar="sidebar = true" />
     </header>
     <!-- Content (Item / Catalog) -->

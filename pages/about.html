@@ -4,45 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="J89-wLyyN3Vwa_FmUOwhs3msl5rCsEomWAZGxd8qRG8" /> 
-    <title>Water Node - learn</title>
+    <title>Water Node</title>
     <link rel="canonical" href="https://waternode.ciroh.org/">
     <link rel="stylesheet" href="./css/site.css">
-    <script src="./js/htmx.js"></script>
-    <script src="./js/preload.js"></script>
-    <script src="./js/_hyperscript.js"></script>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-</head>
-<body hx-ext="class-tools, preload">
+</head>  
+<body>
+
 <div class="content-wrapper"> 
 
 <div class="top-nav">
     <div class="wide-content">
          <div class="menu">
-            <div class="logo-wrapper">
-	      <a href="./index.html"> 
 		<div class="logo-inner">
 		    <img src="./img/noaa-logo.png" alt="Image 1" class="logo-image">
 		    <div class="logo-text">
+			<a href="./">
 			<span class="main-text">Water Prediction Node</span>
 			<span class="sub-text">noaa coastwatch</span>
+			</a>
 		    </div>
 		    <img src="./img/ciroh-logo.png" alt="Image 2" class="logo-image">
 		</div>
-              </a>
-		<svg _="on click toggle .show on #nav" class="hamburger" viewBox="0 0 120 96" width="30" height="30" style="margin-bottom:-6px">
+	   
+	       <input type="checkbox" id="menuToggle">
+	       <label for="menuToggle" class="hamburger">
+		<svg viewBox="0 0 120 96" width="30" height="30" style="margin-bottom:-6px">
 		     <rect width="120" height="24" style="fill:rgb(52, 101, 164)" rx="12"></rect>
 		     <rect y="36" width="120" height="24" style="fill:rgb(52, 101, 164)" rx="12"></rect>
 		     <rect y="72" width="120" height="24" style="fill:rgb(52, 101, 164)" rx="12"></rect>
 		</svg>
-             </div>
-
-            <div id="nav" class="navigation" hx-boost="true">
-	        <div class="navigation-items" preload="mouseover">
-                    <div hx-disable><a href="./catalog/">data catalog</a></div>
+		</label>
+            <nav class="navigation">
+	        <div class="navigation-items">
+                    <div><a href="./catalog/">data catalog</a></div>
                     <div><a href="./projects.html">projects</a></div>
                     <div><a href="./learn.html">learn</a></div>
                     <div><a href="./about.html">about</a></div>
-                    <div hx-disable>
+                    <div>
                         <form action="https://google.com/search">
                             <input type="hidden" name="q" value="site:waternode.ciroh.org">
                             <label>
@@ -52,38 +51,34 @@
                         </form>
                     </div>
                 </div>
-           </div>
+           </nav>
 	</div>
     </div>
 </div>
 
-
 <div class="c content ">
+ <h2>What is the Water Prediction Node?</h2>                                                                       
+ <p>The Water Prediction Node website is a collaborative effort between the <a href="https://water.noaa.gov/about/nwc">National Water Center</a>, <a href=https://ciroh.ua.edu/>CIROH</a>, <a href=https://coastwatch.noaa.gov/cwn/index.html>CoastWatch</a>. The purpose of the website is to intake and disseminate remote sensing data relevant to hydrological modeling, prediction, and analysis. The data comes from a variety of sources from within NOAA, CIROH, as well as potentially other agencies and companies. This data will be disseminated to CIROH researchers, Water Center operations, and the general public.</p>
 
-    <div class="card">
-	<h2><a href="./tutorials.html">Tutorials</a></h2>
-	<p style= "font-size: 20px;">The tutorials page contains a list of interactive <a href=https://mybinder.org/>binder</a> notebooks that provide detailed walkthroughs of ways to use Water Prediction Node data products. They are a great way to quickly learn how to download and begin analyzing the data in the <a href="/catalog/">data catalog</a>. </p>
+ <p>This website also serves as an educational platform for the use of satellite imagery. We want to enable stakeholders that aren't experts in the processing and acquisition of remote sensing data to use satellite imagery in their research efforts. We currently offer [[online tutorials]] and are working towards offering in-person and virtual short course material designed to help people improve their proficiency in working with remote sensing data using their tool of choice.</p>
 
-    </div>
+ <h2>Have questions?</h2>
+ If you have any questions about the data provided by the Water Prediciton Node or have any feedback please feel free to reach out to: dylan dot lee at noaa.gov
 
-    <div class="card">
-	<h2><a href=#>Code Gallery (Coming soon)</a></h2>
-	<p style= "font-size: 20px;"></p>
+<h2>Water Prediction Node Personnel</h2>                                                                    
 
-    </div>
+<h3>Manager</h3>  
+David Vallee 
 
+<h3>Operations Manager</h3>
+Dylan Lee 
 
-    <div class="card">
-	<h2><a href=#>Reference (Coming soon)</a></h2>
-	<p style= "font-size: 20px;"></p>
-
-    </div>
-
-
+<h3>Web Design</h3>
+Adam Warnock
 
 </div>
-</div> 
 
+</div>  
 
 <div class="footer-container">
      <div class="footer-crown">
@@ -119,4 +114,3 @@
 
 </body>
 </html>
-

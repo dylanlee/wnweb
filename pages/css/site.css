@@ -72,10 +72,14 @@ h1,h2,h3,h4{
 
 /* Style for the logo text */
 .logo-text {
+    margin: 0 .5em; /* Add some spacing between the images and text */
+}
+
+.logo-text a {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    margin: 0 .5em; /* Add some spacing between the images and text */
+    text-decoration: none;
+    justify-content: center;
 }
 
 /* Style for the main logo text */
@@ -95,12 +99,13 @@ h1,h2,h3,h4{
 }
 
 .top-nav {
+  position: relative;
   line-height: 30px;
   border-bottom: 1px solid #056FB7; 
   margin: 0px;
   background-image: linear-gradient(#fff, #f4f5f5);
-  box-shadow: 0px 4px 15px 0px rgb(239, 239, 239);
   margin-bottom:1em;
+  box-shadow: 0px .5px 1px rgba(5, 111, 183, 0.2);
 }
 
 .dark-hero {
@@ -151,13 +156,15 @@ color: var(--midBlue)
   text-align: center;
 }
 
-.nav {
-  margin-bottom: 1em;
+/* Hide the hamburger menu on big screens*/
+#menuToggle {
+    display: none;
 }
 
-/* By default, hide the mobile content */
 .hamburger {
-  display: none;
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 h2:not(:first-child) {
@@ -176,24 +183,13 @@ h4 {
   box-sizing: border-box;
 }
 
-.logo-wrapper {
-	display: flex;
-        white-space: nowrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.logo-wrapper > * {
-    margin: 0 .5em;
-    text-decoration: none;
-}
-
 .logo-inner {
     display:flex;
     justify-content: flex-start; /* Distributes items to the start of flex direction*/
     align-items: center; /* Centers items along the cross axis */
     flex-wrap: nowrap; /* Ensures items stay in a single line */
     margin-top: .5em;
+    margin-left: .5em;
 }
 
 .search-box {
@@ -313,31 +309,48 @@ footer .item a:hover {
     white-space: nowrap;
 }
 
-@media(max-width:60em) {
-  #nav {
-      height: 0px;
-      overflow: hidden;
-      text-align: center;
-      font-size: 22px;
-  }
-  #nav.show {
-      height: initial;
-      overflow: visible;
+@media(max-width:59.99em) {
+
+  .menu{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      margin: auto;
   }
 
   .no-mobile {
       display: none !important;
   }
 
-  .hamburger {
-      display: revert;
-      float: right;
+.hamburger {
+    display: flex;
+    margin-right: .5em;
+}
+/* Initially hide the nav items*/
+.navigation {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.navigation-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .navigation-items > *:not(:last-child){
+      font-size: 1.3em; 
+      margin-right: calc(.5em + .7vw);
   }
-  .nav {
-      text-align: center;
-      font-size: 1.2em;
-      line-height: 1.3em;
-  }
+
+/* Show the nav items when the checkbox is checked */
+#menuToggle:checked + .hamburger + .navigation {
+    display: block;
+}
 
   .foot-bot{
       flex-direction: column;
