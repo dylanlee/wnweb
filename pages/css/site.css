@@ -15,7 +15,7 @@ body {
   overflow-x:hidden;
   margin: 0px;
   line-height: 1.5em;
-  font-size: 16px;
+  font-size: 1em;
   color: #333;
   background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -34,7 +34,7 @@ a[href]:hover{
 
 .c {
   padding: 0.7em;
-  max-width: 70ch;
+  max-width: 80ch;
   margin: auto;
 }
 
@@ -53,7 +53,7 @@ a[href]:hover{
 
 h1,h2,h3,h4{
   margin-bottom: .65em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1em;
 }
 
@@ -220,7 +220,7 @@ h4 {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Horizontal shadow, Vertical shadow, Blur, Spread, Color */
                 0 2px 4px rgba(0, 0, 0, 0.08); 
-    max-width: 70ch; 
+    max-width: 80ch; 
     margin: auto;
     margin-bottom: 20px; /* Space between cards */
 }
@@ -238,7 +238,7 @@ h4 {
 
 .footer-crown svg {
     display: block;
-    vertical-align: bottom;
+   /* vertical-align: bottom; */
     width: 100%;
     overflow: hidden;
 }
