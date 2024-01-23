@@ -1,0 +1,8 @@
+[submodule "stac-browser"]
+	path = stac-browser
+	url = https://github.com/dylanlee/stac-browser.git
+	branch = main
+[submodule "private-stac-browser"]
+	path = private-stac-browser
+	url = https://github.com/dylanlee/stac-browser.git
+	branch = private
