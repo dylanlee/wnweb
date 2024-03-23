@@ -55,28 +55,43 @@
     </div>
 </div>
 <div class="c content ">
-<h1>About</h1>
- <h2>What is the Water Prediction Node </h2>                                                                       
- <p>The Water Prediction Node website is a collaborative effort between the <a href="https://water.noaa.gov/about/nwc">National Water Center</a>, <a href=https://ciroh.ua.edu/>CIROH</a>, <a href=https://coastwatch.noaa.gov/cwn/index.html>CoastWatch</a>. The purpose of the website is to intake and disseminate remote sensing data relevant to hydrological modeling, prediction, and analysis. The data comes from a variety of sources from within NOAA, CIROH, as well as potentially other agencies and companies. This data will be disseminated to CIROH researchers, Water Center operations, and the general public.</p>
+<h2>Token Request Form</h2>
 
- <p>This website also serves as an educational platform for the use of satellite imagery. We want to enable stakeholders that aren't experts in the processing and acquisition of remote sensing data to use satellite imagery in their research efforts. We currently offer <a href=https://waternode.ciroh.org/learn.html>online tutorials</a> and are working towards offering in-person and virtual short course material designed to help people improve their proficiency in working with remote sensing data using their tool of choice.</p>
+<form id="sampleForm">
+    <label for="dataInput">Enter an approved email address:</label>
+    <input type="text" id="dataInput" name="dataInput"><br><br>
+    <button type="submit">Submit</button>
+</form>
 
- <h2>Have questions?</h2>
- If you have any questions about the data provided by the Water Prediction Node or have any feedback please feel free to reach out to: dylan dot lee at noaa.gov
+<script>
+document.getElementById("sampleForm").addEventListener("submit", function(event){
+    event.preventDefault(); // Prevent the default form submission
 
-<h2>Water Prediction Node Personnel<h2>
+    var dataInput = document.getElementById("dataInput").value;
 
-<h3>Manager</h3>  
-David Vallee 
+    // Prepare the data to be sent
+    var data = {
+        email: dataInput
+    };
 
-<h3>Operations Manager</h3>
-Dylan Lee 
-
-<h3>Web Design</h3>
-Adam Warnock
-
+    // Send the POST request
+    fetch("https://jc1yuy5yri.execute-api.us-east-1.amazonaws.com/prod", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data) // Convert the JavaScript object to a JSON string
+    })
+    .then(response => response.json()) // Parse the JSON response
+    .then(data => {
+        console.log("Success:", data);
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+    });
+});
+</script>
 </div>
-
 </div>  
 
 <div class="footer-container">

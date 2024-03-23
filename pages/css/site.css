@@ -216,13 +216,52 @@ h4 {
 
 /*cards for posts/page subsections*/
 .card {
-    padding: 20px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Horizontal shadow, Vertical shadow, Blur, Spread, Color */
                 0 2px 4px rgba(0, 0, 0, 0.08); 
     max-width: 80ch; 
     margin: auto;
     margin-bottom: 20px; /* Space between cards */
+    overflow: hidden; /* Hide the overflow content */
+    transition: max-height 0.3s ease; /* Smooth transition for the height */
+}
+
+.card-header {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Distribute space between the children */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px 0px 20px; /* padding-top, padding-right, padding-bottom, padding-left */
+}
+
+.card-content {
+    padding: 0px 20px 10px 20px; /* padding-top, padding-right, padding-bottom, padding-left */
+}
+
+.card-header h2 {
+    flex: 1; 
+    margin-bottom: 0em;
+}
+
+.card:hover {
+    transform: scale(1.01); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.11), /* Increase shadow for popping effect */
+                0 6px 12px rgba(0, 0, 0, 0.10); 
+}
+
+.chevron-icon {
+    color: white; /* Set the icon color to white */
+    background-color: var(--midBlue); /* Set the background to the --midBlue color */
+    font-size: 2em; /* Icon size */
+    width: 1em;
+    height: 1em;
+    padding: 0.25em; /* Padding around the icon to create the circle - adjust as needed */
+    border-radius: 50%; /* This will make it a circle */
+    display: inline-flex; /* Use inline-flex to center the content inside the padding */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: transform 0.3s ease;
+    transform: rotate(-90deg); /* Rotate the icon to point upwards */
+    /* You may not need align-self: top; depending on your layout, as it might offset the icon */
 }
 
 .footer-container {

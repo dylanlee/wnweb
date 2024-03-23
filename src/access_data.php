@@ -1,25 +1,34 @@
 <div class="c content ">
-<h1>Learning resources</h1>
+<h1>Access Data Catalogs</h1>
     <div class="card">
         <div class="card-header">
-	   <h2><a href="./tutorials.html">Tutorials</a></h2>
+	   <h2><a href="./catalog/">Public Data Catalog</a></h2>
 	   <span class="chevron-icon">></span>
         </div>
         <div class="card-content">
-	   <p>The <a href="./tutorials.html">tutorials page</a> contains a list of interactive <a href="https://colab.research.google.com/">google colab</a> notebooks that provide detailed walkthroughs of ways to use Water Prediction Node data products as well links to other pages on this site where topics related to remote sensing and hydrological forecasting are discussed. The tutorials are a great way to quickly learn how to download and begin analyzing the data in the <a href="/catalog/">data catalog</a>. </p>
+	   <p>The WPN public data catalog houses open public data created by NOAA NESDIS STAR as well as other providers.</p>
+	</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+	   <h2><a href="./shhcat/">Experimental Data Catalog</a></h2>
+	   <span class="chevron-icon">></span>
+        </div>
+        <div class="card-content">
+	   <p>The experimental data catalog is a testbed for data sharing between NOAA personnel and CIROH researchers.</p>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
- 	    <h2><a href=#>Data Guide (Coming soon)</a></h2>
+            <h2><a href="./shhcat">Request Experimental Data Access Token</a></h2>
             <span class="chevron-icon">></span>
         </div>
         <div class="card-content">
-  	    <p>The data guide will provide an in-depth overview of the data available in the data catalog.</p>
+            <p>Go here to obtain a token that can be used to access the experimental data catalog.</p>
         </div>
     </div>
-
 
 </div>
 

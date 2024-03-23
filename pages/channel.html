@@ -37,8 +37,7 @@
 		</label>
             <nav class="navigation">
 	        <div class="navigation-items">
-                    <div><a href="./catalog/">data catalog</a></div>
-                    <div><a href="./projects.html">projects</a></div>
+		    <a href="https://waternode.ciroh.org/access_data.html">access data</a>
                     <div><a href="./learn.html">learn</a></div>
                     <div><a href="./about.html">about</a></div>
                     <div>

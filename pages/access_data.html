@@ -55,28 +55,84 @@
     </div>
 </div>
 <div class="c content ">
-<h1>About</h1>
- <h2>What is the Water Prediction Node </h2>                                                                       
- <p>The Water Prediction Node website is a collaborative effort between the <a href="https://water.noaa.gov/about/nwc">National Water Center</a>, <a href=https://ciroh.ua.edu/>CIROH</a>, <a href=https://coastwatch.noaa.gov/cwn/index.html>CoastWatch</a>. The purpose of the website is to intake and disseminate remote sensing data relevant to hydrological modeling, prediction, and analysis. The data comes from a variety of sources from within NOAA, CIROH, as well as potentially other agencies and companies. This data will be disseminated to CIROH researchers, Water Center operations, and the general public.</p>
+<h1>Access Data Catalogs</h1>
+    <div class="card">
+        <div class="card-header">
+	   <h2><a href="./catalog/">Public Data Catalog</a></h2>
+	   <span class="chevron-icon">></span>
+        </div>
+        <div class="card-content">
+	   <p>The WPN public data catalog houses open public data created by NOAA NESDIS STAR as well as other providers.</p>
+	</div>
+    </div>
 
- <p>This website also serves as an educational platform for the use of satellite imagery. We want to enable stakeholders that aren't experts in the processing and acquisition of remote sensing data to use satellite imagery in their research efforts. We currently offer <a href=https://waternode.ciroh.org/learn.html>online tutorials</a> and are working towards offering in-person and virtual short course material designed to help people improve their proficiency in working with remote sensing data using their tool of choice.</p>
+    <div class="card">
+        <div class="card-header">
+	   <h2><a href="./shhcat/">Experimental Data Catalog</a></h2>
+	   <span class="chevron-icon">></span>
+        </div>
+        <div class="card-content">
+	   <p>The experimental data catalog is a testbed for data sharing between NOAA personnel and CIROH researchers.</p>
+        </div>
+    </div>
 
- <h2>Have questions?</h2>
- If you have any questions about the data provided by the Water Prediction Node or have any feedback please feel free to reach out to: dylan dot lee at noaa.gov
-
-<h2>Water Prediction Node Personnel<h2>
-
-<h3>Manager</h3>  
-David Vallee 
-
-<h3>Operations Manager</h3>
-Dylan Lee 
-
-<h3>Web Design</h3>
-Adam Warnock
+    <div class="card">
+        <div class="card-header">
+            <h2><a href="./shhcat">Request Experimental Data Access Token</a></h2>
+            <span class="chevron-icon">></span>
+        </div>
+        <div class="card-content">
+            <p>Go here to obtain a token that can be used to access the experimental data catalog.</p>
+        </div>
+    </div>
 
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    var startExpanded = true; // Set this to true if you want cards to start expanded
+    var cards = document.querySelectorAll('.card');
+
+    cards.forEach((card) => {
+        // Function to get the total height of the card's content for expansion
+        function getContentHeight(cardElement) {
+            let totalHeight = 0;
+            // Include the height of each child (direct descendants only)
+            Array.from(cardElement.children).forEach(child => {
+                totalHeight += child.scrollHeight;
+            });
+            return totalHeight;
+        }
+
+        let header = card.querySelector('.card-header');
+        let contentHeight = getContentHeight(card); // Get total content height for expansion
+        let initialHeight = header.scrollHeight + 8 + 'px'; // Height of the header
+
+        // Set initial height based on whether the card should start expanded or not
+        card.style.height = startExpanded ? contentHeight + 'px' : initialHeight;
+
+        // Set initial state of the chevron and card
+        card.classList.toggle('is-expanded', startExpanded);
+        let chevron = card.querySelector('.chevron-icon');
+        chevron.style.transform = startExpanded ? 'rotate(90deg)' : 'rotate(-90deg)';
+
+        card.addEventListener('click', function() {
+            let isExpanded = this.classList.contains('is-expanded');
+
+            // Toggle the height and chevron direction
+            if (isExpanded) {
+                this.style.height = initialHeight;
+                chevron.style.transform = 'rotate(-90deg)';
+                this.classList.remove('is-expanded');
+            } else {
+                this.style.height = contentHeight + 'px';
+                chevron.style.transform = 'rotate(90deg)';
+                this.classList.add('is-expanded');
+            }
+        });
+    });
+});
+</script>
 </div>  
 
 <div class="footer-container">
